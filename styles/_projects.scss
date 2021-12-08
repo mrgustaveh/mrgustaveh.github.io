@@ -1,0 +1,69 @@
+@import "./colors";
+@import "./flexmixin";
+
+#projects {
+  width: 100%;
+  margin: 0;
+
+  h2 {
+    padding: 0 2rem;
+  }
+
+  .project {
+    padding: 1em 2em;
+    a {
+      @include flexmixin(row, center);
+      width: fit-content;
+      margin: 0 0 1rem 0;
+      text-decoration: none;
+      font-weight: 600;
+      color: $darkBgColor;
+      span {
+        margin: 0 6px 0 0;
+      }
+    }
+
+    div {
+      text-align: center;
+      img {
+        width: 100%;
+        border-radius: 8px;
+        @media only screen and(min-width:1050px) {
+          float: right;
+          max-width: 500px;
+        }
+      }
+      p {
+        color: $darkBgColor;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0 0 0.5rem 0;
+        @media only screen and(min-width:800px) {
+          margin: 0 1.2rem 0 0;
+        }
+      }
+
+      @media only screen and (min-width: 800px) {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 40% auto;
+      }
+
+      @media only screen and(min-width:1050px) {
+        place-items: center;
+      }
+    }
+    .tech {
+      @include flexmixin(row, center);
+      margin: 1rem 0;
+      span {
+        background-color: $lightText;
+        color: $darkBgColor;
+        font-weight: 600;
+        padding: 4px;
+        margin: 10px 10px 0 0;
+        border-radius: 20px;
+      }
+    }
+  }
+}

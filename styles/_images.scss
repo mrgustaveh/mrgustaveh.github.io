@@ -1,0 +1,17 @@
+@import "./colors";
+
+.images {
+  margin: 1rem;
+  columns: 6 200px;
+
+  div {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    display: inline-block;
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+}

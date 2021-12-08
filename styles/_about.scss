@@ -1,0 +1,38 @@
+@import "./colors";
+
+.about {
+  padding: 2rem;
+  .image {
+    width: 10rem;
+    margin: 0 12px 0 12px;
+    float: right;
+    img {
+      width: 100%;
+      border: 0;
+      border-radius: 50%;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    color: $darkText;
+    font-weight: 500;
+  }
+}
+
+@media only screen and(min-width:800px) {
+  .about {
+    .image {
+      &::before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        padding: 12rem;
+        border: 0;
+        border-radius: 50%;
+        box-shadow: $boxShadow;
+        background-color: $primary;
+      }
+    }
+  }
+}

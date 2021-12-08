@@ -1,0 +1,28 @@
+@import "./top";
+@import "./about";
+@import "./projects";
+@import "./images";
+@import "./contact";
+@import "./colors";
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: $primaryLight;
+  overflow: hidden auto;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $lightText;
+  border-radius: 2px;
+}
