@@ -1,15 +1,29 @@
 @import "./colors";
+@import "./flexmixin";
 
 .about {
-  padding: 2rem;
+  padding: 0.5rem 2rem;
   .image {
     width: 10rem;
-    margin: 0 12px 0 12px;
-    float: right;
+    margin: 10px 0 10px 0;
+
     img {
       width: 100%;
       border: 0;
       border-radius: 50%;
+    }
+
+    .dots {
+      @include flexmixin(row, center);
+
+      span {
+        width: 1rem;
+        height: 1rem;
+        margin: 6px 10px 0 0;
+        border: 0;
+        border-radius: 50%;
+        background-color: $lightText;
+      }
     }
   }
 
@@ -17,22 +31,10 @@
     font-size: 1rem;
     color: $darkText;
     font-weight: 500;
-  }
-}
-
-@media only screen and(min-width:800px) {
-  .about {
-    .image {
-      &::before {
-        position: absolute;
-        z-index: -1;
-        content: "";
-        padding: 12rem;
-        border: 0;
-        border-radius: 50%;
-        box-shadow: $boxShadow;
-        background-color: $primary;
-      }
+    text-align: justify;
+    &::selection {
+      background-color: $lightDarkBgColor;
+      color: $primary;
     }
   }
 }

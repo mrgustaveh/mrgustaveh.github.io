@@ -16,10 +16,6 @@
 
   h2 {
     color: $darkBgColor;
-
-    @media (max-width: 576px) {
-      font-size: 14px;
-    }
   }
 
   nav {

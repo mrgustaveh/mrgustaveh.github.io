@@ -1,0 +1,113 @@
+@media (max-width: 576px) {
+  .top {
+    h2 {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and(min-width:800px) {
+  .about {
+    .image {
+      float: right;
+      margin: 0 0 0 12px;
+      img {
+        border-radius: 20%;
+        opacity: 0.85;
+      }
+      &::before {
+        position: fixed;
+        width: 20rem;
+        height: 20rem;
+        content: "";
+        z-index: -1;
+        padding: 12rem;
+        border: 0;
+        border-radius: 50%;
+        box-shadow: $boxShadow;
+        background-color: $primary;
+        animation: animateImageBefore;
+        animation-duration: 800ms;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(1, 0, 0, 1);
+      }
+
+      .dots {
+        display: none;
+      }
+    }
+    p {
+      text-align: left;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        opacity: 1;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 20%;
+        background-color: $primary;
+        box-shadow: $boxShadow;
+        transform: translate(0, -100%) rotate(20deg);
+        animation: animateBefore;
+        animation-duration: 800ms;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(1, 0, 0, 1);
+      }
+    }
+  }
+
+  #projects {
+    .project {
+      div {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 40% auto;
+        img {
+          float: right;
+          max-width: 500px;
+        }
+        p {
+          margin: 0 1.2rem 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:1050px) {
+  #projects {
+    .project {
+      div {
+        place-items: center;
+      }
+    }
+  }
+}
+
+@keyframes animateImageBefore {
+  0% {
+    transform: scale(0.45);
+  }
+  50% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateBefore {
+  0% {
+    transform: translate(0, -100%) rotate(20deg);
+  }
+  50% {
+    transform: translate(0, -100%) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, -100%) rotate(20deg);
+  }
+}

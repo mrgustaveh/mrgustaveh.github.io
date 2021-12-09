@@ -4,6 +4,7 @@
 @import "./images";
 @import "./contact";
 @import "./colors";
+@import "./mediaQuery";
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 
 * {
@@ -15,7 +16,13 @@
 
 body {
   background-color: $primaryLight;
-  overflow: hidden auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.bottom {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 ::-webkit-scrollbar {

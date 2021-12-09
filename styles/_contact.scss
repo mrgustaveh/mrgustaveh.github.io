@@ -4,7 +4,7 @@
 .contact {
   width: fit-content;
   padding: 6px;
-  margin: 2rem auto;
+  margin: 2rem auto 0.5rem auto;
   border-radius: 0.5rem;
   background-color: $primary;
   box-shadow: $boxShadow;
@@ -19,5 +19,9 @@
         font-weight: 600;
       }
     }
+  }
+  #doc {
+    font-size: 1.05rem;
+    color: rgb(163, 13, 13);
   }
 }

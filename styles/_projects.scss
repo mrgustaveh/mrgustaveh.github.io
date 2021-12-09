@@ -28,29 +28,16 @@
       img {
         width: 100%;
         border-radius: 8px;
-        @media only screen and(min-width:1050px) {
-          float: right;
-          max-width: 500px;
-        }
       }
       p {
         color: $darkBgColor;
         font-size: 1rem;
         font-weight: 500;
         margin: 0 0 0.5rem 0;
-        @media only screen and(min-width:800px) {
-          margin: 0 1.2rem 0 0;
+        &::selection {
+          background-color: $lightDarkBgColor;
+          color: $primary;
         }
-      }
-
-      @media only screen and (min-width: 800px) {
-        text-align: left;
-        display: grid;
-        grid-template-columns: 40% auto;
-      }
-
-      @media only screen and(min-width:1050px) {
-        place-items: center;
       }
     }
     .tech {
