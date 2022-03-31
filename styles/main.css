@@ -65,42 +65,6 @@
   padding: 0.5rem 1rem;
 }
 
-.about .image {
-  width: 10rem;
-  margin: 10px 0 10px 0;
-  display: none;
-}
-
-.about .image img {
-  width: 100%;
-  border: 0;
-  border-radius: 50%;
-}
-
-.about .image .dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.about .image .dots span {
-  width: 1rem;
-  height: 1rem;
-  margin: 6px 10px 0 0;
-  border: 0;
-  border-radius: 50%;
-  background-color: #bdbdbd;
-}
-
 .about p {
   font-size: 1rem;
   color: #4f4f4f;
@@ -108,12 +72,14 @@
   text-align: justify;
 }
 
-.about p::-moz-selection {
+.about p::-moz-selection,
+.about b::-moz-selection {
   background-color: #1e213a;
   color: #fff;
 }
 
-.about p::selection {
+.about p::selection,
+.about b::selection {
   background-color: #1e213a;
   color: #fff;
 }
@@ -390,67 +356,8 @@
 }
 
 @media only screen and (min-width: 800px) {
-  .about .image {
-    float: right;
-    margin: 0 0 0 12px;
-  }
-  .about .image img {
-    border-radius: 20%;
-    opacity: 0.85;
-  }
-  .about .image::before {
-    position: fixed;
-    width: 20rem;
-    height: 20rem;
-    content: "";
-    z-index: -1;
-    padding: 12rem;
-    border: 0;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-    background-color: #fff;
-    -webkit-animation: animateImageBefore;
-            animation: animateImageBefore;
-    -webkit-animation-duration: 800ms;
-            animation-duration: 800ms;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
-            animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  }
-  .about .image .dots {
-    display: none;
-  }
   .about p {
     text-align: left;
-  }
-  .about p::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    opacity: 1;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 20%;
-    background-color: #fff;
-    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-    -webkit-transform: translate(0, -100%) rotate(20deg);
-            transform: translate(0, -100%) rotate(20deg);
-    -webkit-animation: animateBefore;
-            animation: animateBefore;
-    -webkit-animation-duration: 800ms;
-            animation-duration: 800ms;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
-            animation-timing-function: cubic-bezier(1, 0, 0, 1);
   }
   #projects .project div {
     text-align: left;
