@@ -1,4 +1,6 @@
 @import "./colors";
+@import "./flexmixin";
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
 
 .top {
   width: 100%;
@@ -16,6 +18,9 @@
 
   h2 {
     color: $darkBgColor;
+    font-size: 1rem;
+    font-family: "Coming Soon", cursive;
+    font-weight: 600;
   }
 
   nav {
@@ -31,7 +36,7 @@
           display: inline-block;
           text-decoration: none;
           color: $darkText;
-          font-size: 1rem;
+          font-size: 14px;
           font-weight: bolder;
         }
       }

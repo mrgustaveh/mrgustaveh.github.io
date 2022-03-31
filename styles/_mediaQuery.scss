@@ -75,6 +75,10 @@
         }
       }
     }
+
+    hr {
+      display: none;
+    }
   }
 }
 
@@ -83,6 +87,24 @@
     .project {
       div {
         place-items: center;
+      }
+    }
+  }
+
+  #tools {
+    border: 0;
+
+    #buttons {
+      display: none;
+    }
+
+    #tools_lang {
+      & :nth-child(1) {
+        margin-left: 1rem;
+      }
+
+      & :last-child {
+        margin-right: 0;
       }
     }
   }

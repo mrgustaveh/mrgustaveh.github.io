@@ -6,11 +6,11 @@
   margin: 0;
 
   h2 {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .project {
-    padding: 1em 2em;
+    padding: 1rem 1rem;
     a {
       @include flexmixin(row, center);
       width: fit-content;
@@ -24,7 +24,7 @@
     }
 
     div {
-      text-align: center;
+      text-align: justify;
       img {
         width: 100%;
         border-radius: 8px;

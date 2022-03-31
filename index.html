@@ -70,14 +70,17 @@
         </div>
       </div>
       <p>
-        Hi there, thankyou for checking my portfolio. I am Antony, a software
-        developer with a particular interest in web technologies, frontend and
-        backend. Focusing on React Js, Material UI, SCSS and CSS on the
-        frontend. On the backend I have built RESTful Apis in Python, Django and
-        the DjangoRestFramework and now considering working with GraphQL Api's.
-        I am also passionate about the world of Data Science and currently I am
-        learning concepts in Data science from cleaning to visualization and
-        modelling.
+        Hi there, thank you for checking out my portfolio. I am
+        <b>Antony</b>, a software developer focusing on
+        <b>web</b>
+        and
+        <b>cross platform mobile technologies</b>.
+      </p>
+      <p>
+        I have a paticular interest in the React Native framework on mobile. On
+        web I have worked with both frontend (React Js, Next Js, CSS, SCSS,
+        Material UI) and backend (Python, Django, REST & GraphQl) technologies
+        to create amazing web experiences.
       </p>
     </div>
 
@@ -85,7 +88,7 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <a href="https://mburu-antony-weather.netlify.app/"
+        <a id="weatherApp" href="https://mburu-antony-weather.netlify.app/"
           ><span class="material-icons">public</span> theWeather</a
         >
         <div>
@@ -103,6 +106,7 @@
           <span>CSS</span>
         </div>
       </div>
+      <hr />
 
       <div class="project">
         <a href="https://mburu-antony-imageuplaoder.netlify.app/#/"
@@ -123,6 +127,7 @@
           <span>CSS</span>
         </div>
       </div>
+      <hr />
 
       <div class="project">
         <a href="https://antony-mburu-countryquiz.netlify.app/#/"
@@ -143,6 +148,7 @@
           <span>CSS</span>
         </div>
       </div>
+      <hr />
 
       <div class="project">
         <a href="https://mburu-antony-unsplash.netlify.app/"
@@ -163,22 +169,40 @@
           <span>RESTFUL Api</span>
           <span>SCSS</span>
           <span>CSS</span>
+          <span>Styled Components</span>
+          <span>Redux</span>
         </div>
       </div>
     </div>
 
-    <div class="images">
-      <div>
-        <img src="./images/imag00.png" alt="" />
+    <div id="tools">
+      <h2>Languages, Frameworks & Tools</h2>
+      <div id="buttons">
+        <button id="left">
+          <span class="material-icons-outlined">arrow_back_ios</span>
+        </button>
+        <button id="right">
+          <span class="material-icons-outlined">arrow_forward_ios</span>
+        </button>
       </div>
-      <div>
-        <img src="./images/image03.png" alt="" />
-      </div>
-      <div>
-        <img src="./images/image01.png" alt="" />
-      </div>
-      <div>
-        <img src="./images/image04.png" alt="" />
+
+      <div id="tools_lang">
+        <span>Python</span>
+        <span>Django</span>
+        <span>REST</span>
+        <span>GraphQl</span>
+        <span>NodeJs</span>
+        <span>Javascript</span>
+        <span>ReactJs</span>
+        <span>ReactNative</span>
+        <span>Expo</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>SCSS</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>GitLab</span>
+        <span>VsCode</span>
       </div>
     </div>
 
@@ -230,6 +254,22 @@
 
     <script>
       document.querySelector("#date").textContent = new Date().getUTCFullYear();
+
+      const scrollLeftBtn = document.querySelector("#left");
+      const scrollRightBtn = document.querySelector("#right");
+      const scrollable = document.querySelector("#tools_lang");
+
+      scrollLeftBtn.addEventListener("click", function () {
+        scrollable.scrollLeft += 200;
+      });
+      scrollRightBtn.addEventListener("click", function () {
+        scrollable.scrollLeft += -200;
+      });
+
+      document.querySelector("#weatherApp").addEventListener("click", (e) => {
+        e.preventDefault();
+        alert("theWeather project is under maintenance");
+      });
     </script>
   </body>
 </html>

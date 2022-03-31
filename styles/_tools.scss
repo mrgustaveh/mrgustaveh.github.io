@@ -1,0 +1,75 @@
+@import "./colors";
+@import "./flexmixin";
+
+#tools {
+  width: 100%;
+  height: 6rem;
+  margin: 1rem 0;
+  border-width: 0;
+  border-top: 1px solid $darkBgColor;
+
+  h2 {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  #buttons {
+    position: absolute;
+    width: 100%;
+    @include flexmixin(row, center);
+    justify-content: space-between !important;
+
+    button {
+      width: 2rem;
+      height: 3rem;
+      padding: 0.5rem;
+      border: 0;
+      box-shadow: $boxShadow;
+      background-color: rgba(255, 255, 255, 0.65);
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #left {
+      border-radius: 0 12px 12px 0;
+    }
+
+    #right {
+      border-radius: 12px 0 0 12px;
+    }
+  }
+
+  #tools_lang {
+    width: 100%;
+    margin: 0.25rem 0 0 0;
+    @include flexmixin(row, center);
+    flex-wrap: nowrap !important;
+    z-index: 2000;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+    & :nth-child(1) {
+      margin-left: 2.5rem;
+    }
+
+    & :last-child {
+      margin-right: 2.5rem;
+    }
+
+    span {
+      width: fit-content;
+      margin: 0 0.5rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      font-weight: 600;
+      font-size: 1rem;
+      background-color: $lightText;
+      color: $darkBgColor;
+    }
+  }
+}
