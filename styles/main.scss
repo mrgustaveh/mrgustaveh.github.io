@@ -4,6 +4,7 @@
 @import "./images";
 @import "./contact";
 @import "./tools";
+@import "./animations";
 @import "./colors";
 @import "./mediaQuery";
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
@@ -24,7 +25,8 @@ html {
 }
 
 body {
-  background-color: $primaryLight;
+  background-color: $primary;
+  color: $lightText;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -36,7 +38,6 @@ body {
   font-weight: 600;
 
   span {
-    // font-size: 1rem;
     font-family: "Open Sans", sans-serif;
   }
 }

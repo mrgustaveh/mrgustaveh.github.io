@@ -51,6 +51,7 @@
         </ul>
       </nav>
     </div>
+    <div id="scroll-tracker"></div>
 
     <div class="about">
       <h2>About Me</h2>
@@ -84,7 +85,11 @@
             next five days. It also provides a search where a user can search
             for other locations weather information.
           </p>
-          <img src="./images/weather.PNG" alt="theweather" />
+          <img
+            class="project-img"
+            src="./images/weather.PNG"
+            alt="theweather"
+          />
         </div>
         <div class="tech">
           <span>Javascript</span> <span>React Js</span>
@@ -95,7 +100,6 @@
           <span class="material-icons-outlined">source</span> source code</a
         >
       </div>
-      <hr />
 
       <div class="project">
         <a href="https://mburu-antony-imageuplaoder.netlify.app/#/"
@@ -108,7 +112,11 @@
             viewing in real-time the progress of file upload. Once the upload is
             complete, they get back a URL for the image.
           </p>
-          <img src="./images/imageUplader.PNG" alt="imageuploader" />
+          <img
+            class="project-img"
+            src="./images/imageUplader.PNG"
+            alt="imageuploader"
+          />
         </div>
         <div class="tech">
           <span>Javascript</span> <span>React Js</span>
@@ -119,7 +127,6 @@
           <span class="material-icons-outlined">source</span> source code</a
         >
       </div>
-      <hr />
 
       <div class="project">
         <a href="https://antony-mburu-countryquiz.netlify.app/#/"
@@ -132,7 +139,11 @@
             the capital city of a given country or provided with the flag of a
             country, guess it's name.
           </p>
-          <img src="./images/countryquiz.PNG" alt="countrQuiz" />
+          <img
+            class="project-img"
+            src="./images/countryquiz.PNG"
+            alt="countrQuiz"
+          />
         </div>
         <div class="tech">
           <span>Javascript</span> <span>React Js</span>
@@ -143,7 +154,6 @@
           <span class="material-icons-outlined">source</span> source code</a
         >
       </div>
-      <hr />
 
       <div class="project">
         <a href="https://mburu-antony-unsplash.netlify.app/"
@@ -156,7 +166,11 @@
             styled-components and SCSS. The project is a clone of unsplash, the
             open source image sharing platform.
           </p>
-          <img src="./images/unsplash.PNG" alt="myUnsplash" />
+          <img
+            class="project-img"
+            src="./images/unsplash.PNG"
+            alt="myUnsplash"
+          />
         </div>
         <div class="tech">
           <span>Javascript</span> <span>React Js</span> <span>Python</span>
@@ -249,6 +263,9 @@
     </div>
 
     <p class="bottom"><span id="date"></span> &COPY; Antony Mburu</p>
+
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+    <script src="./js/index.js"></script>
 
     <script>
       document.querySelector("#date").textContent = new Date().getUTCFullYear();

@@ -6,15 +6,15 @@
 
   p {
     font-size: 1rem;
-    color: $darkText;
+    color: $lightText;
     font-weight: 500;
     text-align: justify;
   }
   p,
   b {
     &::selection {
-      background-color: $lightDarkBgColor;
-      color: $primary;
+      background-color: $darkBgColor;
+      color: $lightText;
     }
   }
 }

@@ -1,0 +1,9 @@
+@import "./colors";
+
+#scroll-tracker {
+  height: 0.25rem;
+  background-color: $textColor;
+  position: fixed;
+  inset: 0 0 auto;
+  transform-origin: left;
+}
