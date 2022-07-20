@@ -1,27 +1,95 @@
 @import "./colors";
-@import "./flexmixin";
+@import "./mixins";
 
-.contact {
-  width: fit-content;
-  padding: 6px;
-  margin: 2rem auto 0.5rem auto;
-  border-radius: 0.5rem;
-  background-color: $darkBgColor;
-  box-shadow: $boxShadow;
-  ul {
-    @include flexmixin(row, center);
-    li {
-      list-style: none;
-      margin: 0 0.5rem;
-      a {
-        text-decoration: none;
-        color: $darkText;
+#contact {
+  .contacts {
+    @include tablet-portrait-up {
+      @include flexmixin(row, wrap, center, center);
+      gap: 1rem;
+      transform: translate(0, 20%);
+    }
+
+    @include tablet-upwards {
+      transform: translate(0, 50%);
+    }
+
+    @include desktop {
+      transform: translate(0, 100%);
+    }
+
+    transform: translate(0, 30%);
+
+    a {
+      @include tablet-portrait-up {
+        width: 19rem;
+        border-radius: 15rem;
+      }
+
+      display: block;
+      text-decoration: none;
+      @include flexmixin(row, no-wrap, center, center);
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-radius: 0.65rem;
+      box-shadow: $boxShadow;
+
+      span {
+        font-size: 1rem;
         font-weight: 600;
+        color: $textColor;
+      }
+
+      img {
+        width: 3rem;
       }
     }
-  }
-  #doc {
-    font-size: 1.05rem;
-    color: rgb(163, 13, 13);
+
+    .mail,
+    .gitlab {
+      background-color: $white;
+
+      img {
+        width: 2.75rem;
+      }
+
+      span {
+        color: $black;
+      }
+    }
+
+    .mail {
+      img {
+        width: 2.45rem;
+      }
+    }
+
+    .github {
+      background-color: $githubblack;
+
+      img {
+        width: 4rem;
+      }
+    }
+
+    .lnkdn {
+      background-color: $blumine;
+
+      img {
+        width: 2.5rem;
+      }
+
+      span {
+        color: $white;
+      }
+    }
+
+    .resume {
+      background-color: $milanored;
+
+      img {
+        width: 2.5rem;
+      }
+    }
   }
 }

@@ -3,295 +3,299 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="antony mburu" />
-    <title>antony mburu</title>
+    <meta name="description" content="mburuanthony.github.io" />
+    <title>mburuanthony.github.io</title>
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <div class="top">
-      <h2>Antony Mburu</h2>
-
-      <nav>
-        <ul>
-          <li>
-            <a
-              href="mailto:antonymburu563@gmail.com"
-              rel="noreferrer"
-              title="contact me at : antonymburu563@gmail.com"
-              >Email</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/antony-mburu-7bb93119a/"
-              target="_self"
-              rel="noreferrer"
-              title="my LinkedIn profile"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/mburuanthony"
-              target="_self"
-              rel="noreferrer"
-              title="my GitHub page"
-              >GitHub</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <div id="doodle"></div>
+    <div id="doodle-01"></div>
+    <button id="scroll">
+      <span id="btn_text"></span>
+      <span class="material-icons-outlined"> navigate_next </span>
+    </button>
+    <div id="spinner_container">
+      <div id="spinner">
+        <div class="section red"></div>
+        <div class="section green"></div>
+        <div class="section blue"></div>
+      </div>
     </div>
-    <div id="scroll-tracker"></div>
 
-    <div class="about">
-      <h2>About Me</h2>
+    <section id="about">
+      <h2 class="name">Antony Mburu</h2>
 
-      <p>
+      <h2 class="title">about me</h2>
+      <p class="pr-0">
         Hi there, thank you for checking out my portfolio. I am
         <b>Antony</b>, a software developer specializing in
         <b>web</b>
         and
         <b>cross platform mobile technologies</b>.
       </p>
-      <p>
+      <p class="pr-01">
         I have a paticular interest in the React Native framework on mobile. On
-        web I have worked with both frontend (React Js, Next Js, CSS, SCSS,
-        Material UI) and backend (Python, Django, REST & GraphQl) technologies
-        to create amazing web experiences.
+        web I have worked with both frontend (React Js, CSS, SCSS, Material UI)
+        and backend (Python, Django & REST) technologies to create amazing web
+        experiences.
       </p>
-    </div>
+    </section>
 
-    <div id="projects">
-      <h2>Projects</h2>
+    <section id="projects">
+      <h2 class="title">projects</h2>
 
-      <div class="project">
-        <a id="weatherApp" href="https://mburu-antony-weather.netlify.app/"
-          ><span class="material-icons">public</span> theWeather</a
-        >
+      <div class="projects">
         <div>
-          <p>
-            A web based weather info app. From a users location, the app can
-            provide weather details for the current day, and a forecast of the
-            next five days. It also provides a search where a user can search
-            for other locations weather information.
-          </p>
-          <img
-            class="project-img"
-            src="./images/weather.PNG"
-            alt="theweather"
-          />
-        </div>
-        <div class="tech">
-          <span>Javascript</span> <span>React Js</span>
-          <span title="metaweather api">API</span>
-          <span>CSS</span>
-        </div>
-        <a href="https://github.com/mburuanthony/theWeather">
-          <span class="material-icons-outlined">source</span> source code</a
-        >
-      </div>
+          <a class="link app" id="weatherApp" href="#projects"
+            ><span class="material-icons">public</span> theWeather</a
+          >
 
-      <div class="project">
-        <a href="https://mburu-antony-imageuplaoder.netlify.app/#/"
-          ><span class="material-icons">public</span> imageUploader</a
-        >
+          <div class="description">
+            <div class="text">
+              <p>
+                A web based weather info app. From a users location, the app can
+                provide weather details for the current day, and a forecast of
+                the next five days. It also provides a search where a user can
+                search for other locations weather information.
+              </p>
+              <p class="info">
+                this project is undergoing an update to using another open
+                source weather api
+              </p>
+            </div>
+            <img
+              class="project-img"
+              src="./img/weather.PNG"
+              loading="lazy"
+              alt="theweather project"
+            />
+          </div>
+
+          <div class="tech">
+            <span>Javascript</span> <span>React Js</span>
+            <span>CSS</span>
+            <span>metaweather API</span>
+          </div>
+          <a
+            class="link source"
+            href="https://github.com/mburuanthony/theWeather"
+          >
+            <span class="material-icons-outlined">source</span> source code</a
+          >
+        </div>
+
         <div>
-          <p>
-            A web app built on React Js and intergrated with Firebase(storage).
-            A user uploads an image of any extension(png, jpg, jpeg..) while
-            viewing in real-time the progress of file upload. Once the upload is
-            complete, they get back a URL for the image.
-          </p>
-          <img
-            class="project-img"
-            src="./images/imageUplader.PNG"
-            alt="imageuploader"
-          />
-        </div>
-        <div class="tech">
-          <span>Javascript</span> <span>React Js</span>
-          <span>CSS</span>
-          <span>Firebase(Storage)</span>
-        </div>
-        <a href="https://github.com/mburuanthony/imageUploader">
-          <span class="material-icons-outlined">source</span> source code</a
-        >
-      </div>
+          <a
+            class="link app"
+            id="imageuploader"
+            href="https://mburu-antony-imageuplaoder.netlify.app/#/"
+            ><span class="material-icons">public</span> imageUploader</a
+          >
 
-      <div class="project">
-        <a href="https://antony-mburu-countryquiz.netlify.app/#/"
-          ><span class="material-icons">public</span> countryQuiz</a
-        >
+          <div class="description">
+            <p>
+              A web app built on React Js and intergrated with
+              Firebase(storage). A user uploads an image of any extension(png,
+              jpg, jpeg..) while viewing in real-time the progress of file
+              upload. Once the upload is complete, they get back a URL for the
+              image.
+            </p>
+            <img
+              class="project-img"
+              src="./img/imageuplader.PNG"
+              loading="lazy"
+              alt="imageuploader project"
+            />
+          </div>
+
+          <div class="tech">
+            <span>Javascript</span> <span>React Js</span>
+            <span>CSS</span>
+            <span>Firebase(Storage)</span>
+          </div>
+          <a
+            class="link source"
+            href="https://github.com/mburuanthony/imageUploader"
+          >
+            <span class="material-icons-outlined">source</span> source code</a
+          >
+        </div>
+
         <div>
-          <p>
-            This app fetches data from the restcountries.eu api and uses the
-            data for a game like experience where a player is required to guess
-            the capital city of a given country or provided with the flag of a
-            country, guess it's name.
-          </p>
-          <img
-            class="project-img"
-            src="./images/countryquiz.PNG"
-            alt="countrQuiz"
-          />
-        </div>
-        <div class="tech">
-          <span>Javascript</span> <span>React Js</span>
-          <span title="restcountries.eu api">API</span>
-          <span>CSS</span>
-        </div>
-        <a href="https://github.com/mburuanthony/countryQuiz">
-          <span class="material-icons-outlined">source</span> source code</a
-        >
-      </div>
+          <a
+            class="link app"
+            id="countryquiz"
+            href="https://antony-mburu-countryquiz.netlify.app/#/"
+            ><span class="material-icons">public</span> countryQuiz</a
+          >
 
-      <div class="project">
-        <a href="https://mburu-antony-unsplash.netlify.app/"
-          ><span class="material-icons">public</span> myUnsplash</a
-        >
+          <div class="description">
+            <p>
+              This app consumes data from the restcountries.eu api and uses the
+              data for a game like experience where a player is required to
+              guess the capital city of a given country or provided with the
+              flag of a country, guess it's name.
+            </p>
+            <img
+              class="project-img"
+              src="./img/countryquiz.PNG"
+              loading="lazy"
+              alt="countryquiz project"
+            />
+          </div>
+
+          <div class="tech">
+            <span>Javascript</span> <span>React Js</span>
+            <span>CSS</span>
+            <span>resctcountries.eu API</span>
+          </div>
+          <a
+            class="link source"
+            href="https://github.com/mburuanthony/countryQuiz"
+          >
+            <span class="material-icons-outlined">source</span> source code</a
+          >
+        </div>
+
         <div>
-          <p>
-            A fullstack project I made in Django and the DjangoRestFramework
-            (RESTFUL Api) on the backend and implemented the UI with React JS,
-            styled-components and SCSS. The project is a clone of unsplash, the
-            open source image sharing platform.
-          </p>
-          <img
-            class="project-img"
-            src="./images/unsplash.PNG"
-            alt="myUnsplash"
-          />
+          <a
+            class="link app"
+            id="myunsplash"
+            href="https://mburu-antony-unsplash.netlify.app/"
+            ><span class="material-icons">public</span> myUnsplash</a
+          >
+
+          <div class="description">
+            <p>
+              A fullstack project I made in Django and the DjangoRestFramework
+              (RESTFUL Api) on the backend and implemented the UI with React JS,
+              styled-components and SCSS. The project is a clone of unsplash,
+              the open source image sharing platform.
+            </p>
+            <img
+              class="project-img"
+              src="./img/unsplash.PNG"
+              loading="lazy"
+              alt="myunsplash project"
+            />
+          </div>
+
+          <div class="tech">
+            <span>Javascript</span> <span>React Js</span> <span>Python</span>
+            <span>Django</span> <span>DjangoRestFramework</span>
+            <span>RESTFUL Api</span>
+            <span>SCSS</span>
+            <span>CSS</span>
+            <span>Redux</span>
+            <span>Styled Components</span>
+          </div>
+          <a
+            class="link source"
+            href="https://github.com/mburuanthony/Unsplash"
+          >
+            <span class="material-icons-outlined">lock</span> source code</a
+          >
         </div>
-        <div class="tech">
-          <span>Javascript</span> <span>React Js</span> <span>Python</span>
-          <span>Django</span> <span>DjangoRestFramework</span>
-          <span>RESTFUL Api</span>
-          <span>SCSS</span>
-          <span>CSS</span>
-          <span>Redux</span>
-          <span>Styled Components</span>
+      </div>
+    </section>
+
+    <section id="tools">
+      <h2 class="title">languages, tools & frameworks</h2>
+
+      <div class="tools">
+        <div class="js">
+          <img class="img" src="./img/js.png" alt="javascript" />
         </div>
-        <a id="unsplash_source" href="https://github.com/mburuanthony/Unsplash">
-          <span class="material-icons-outlined">lock</span> source code</a
+        <div class="py">
+          <img src="./img/py.png" alt="python" />
+        </div>
+        <div class="node">
+          <img src="./img/node.svg" alt="nodejs" />
+        </div>
+        <div class="sass">
+          <img src="./img/scss.png" alt="scss" />
+        </div>
+        <div class="css">
+          <img src="./img/css.png" alt="css" />
+        </div>
+        <div class="react">
+          <img src="./img/react.png" alt="reactjs" />
+        </div>
+        <div class="rn">
+          <img src="./img/rn.png" alt="reactnative" />
+        </div>
+        <div class="expo">
+          <img src="./img/expo.png" alt="expo" />
+        </div>
+        <div class="dj">
+          <img src="./img/dj.png" alt="django" />
+        </div>
+        <div class="drf">
+          <img src="./img/drf.png" alt="DjangoRestFramework" />
+        </div>
+        <div class="github">
+          <img src="./img/github.png" alt="github" />
+        </div>
+        <div class="gitlab">
+          <img src="./img/gitlab.png" alt="gitlab" />
+        </div>
+        <div class="git">
+          <img src="./img/git.png" alt="git" />
+        </div>
+        <div class="code">
+          <img src="./img/vsc.jpg" alt="vscode" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="title">contact</h2>
+
+      <div class="contacts">
+        <a class="mail" href="mailto:antonymburu563@gmail.com">
+          <img src="./img/email.png" alt="gmail" />
+          <span>Reach out on Email</span>
+        </a>
+
+        <a
+          class="lnkdn"
+          href="https://www.linkedin.com/in/antony-mburu-7bb93119a/"
         >
+          <img src="./img/lnkdn.jpg" alt="linkedin" />
+          <span>Connect with me on LinkedIn</span>
+        </a>
+
+        <a class="github" href="https://github.com/mburuanthony">
+          <img src="./img/github.png" alt="github" />
+          <span>Checkout my GitHub Profile</span>
+        </a>
+
+        <a class="gitlab" href="https://gitlab.com/mburuanthony">
+          <img src="./img/gitlab.png" alt="gitlab" />
+          <span>Checkout my GitLab Profile</span>
+        </a>
+
+        <a
+          class="resume"
+          href="./img/Antony_Mburu_Resume.pdf"
+          title="download my resume"
+          download
+          id="doc"
+        >
+          <img src="./img/pdf.png" alt="resume_pdf" />
+          <span>Get my Resume</span>
+        </a>
       </div>
-    </div>
+    </section>
 
-    <div id="tools">
-      <h2>Languages, Frameworks & Tools</h2>
-      <div id="buttons">
-        <button id="left">
-          <span class="material-icons-outlined">arrow_back_ios</span>
-        </button>
-        <button id="right">
-          <span class="material-icons-outlined">arrow_forward_ios</span>
-        </button>
-      </div>
+    <p id="copy">&copy; &nbsp;Antony Mburu &nbsp;<span id="year"></span></p>
 
-      <div id="tools_lang">
-        <span>Python</span>
-        <span>Django</span>
-        <span>REST</span>
-        <span>GraphQl</span>
-        <span>NodeJs</span>
-        <span>Javascript</span>
-        <span>ReactJs</span>
-        <span>ReactNative</span>
-        <span>Expo</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>SCSS</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>GitLab</span>
-        <span>VsCode</span>
-      </div>
-    </div>
-
-    <div class="contact">
-      <ul>
-        <li>
-          <a
-            href="mailto:antonymburu563@gmail.com"
-            rel="noreferrer"
-            title="contact me at : antonymburu563@gmail.com"
-            >Email</a
-          >
-          &nbsp;|
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/antony-mburu-7bb93119a/"
-            target="_self"
-            rel="noreferrer"
-            title="my LinkedIn profile"
-            >LinkedIn</a
-          >
-          &nbsp;|
-        </li>
-        <li>
-          <a
-            href="https://github.com/mburuanthony"
-            target="_self"
-            rel="noreferrer"
-            title="my GitHub page"
-            >GitHub</a
-          >
-        </li>
-        |
-        <li>
-          <a
-            href="./doc/Antony_Mburu_Resume.pdf"
-            title="download my resume"
-            download
-            id="doc"
-          >
-            <i class="fas fa-file-pdf"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <p class="bottom"><span id="date"></span> &COPY; Antony Mburu</p>
-
-    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
-    <script src="./js/index.js"></script>
-
-    <script>
-      document.querySelector("#date").textContent = new Date().getUTCFullYear();
-
-      const scrollLeftBtn = document.querySelector("#left");
-      const scrollRightBtn = document.querySelector("#right");
-      const scrollable = document.querySelector("#tools_lang");
-
-      scrollLeftBtn.addEventListener("click", function () {
-        scrollable.scrollLeft += 200;
-      });
-      scrollRightBtn.addEventListener("click", function () {
-        scrollable.scrollLeft += -200;
-      });
-
-      document.querySelector("#weatherApp").addEventListener("click", (e) => {
-        e.preventDefault();
-        alert("theWeather project is under maintenance");
-      });
-
-      document
-        .querySelector("#unsplash_source")
-        .addEventListener("click", (e) => {
-          e.preventDefault();
-          alert("myUnsplash project is held under a private repository");
-        });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>

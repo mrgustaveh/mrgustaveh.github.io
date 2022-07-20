@@ -1,40 +1,21 @@
-@import "./colors";
-@import "./flexmixin";
+@import url("https://fonts.googleapis.com/css2?family=Satisfy");
+@import "./mixins";
 
-.top {
-  width: 100%;
-  height: 3.5rem;
-  padding: 2px 8px;
+#about {
+  @include flexmixin(column, no-wrap, none, center);
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: $boxShadow;
-
-  h2 {
-    color: $lightText;
-    font-size: 1rem;
-    font-weight: 600;
+  .name {
+    font-size: 2.5rem;
+    font-family: "Satisfy", cursive;
+    margin-bottom: 3rem;
   }
 
-  nav {
-    ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      li {
-        list-style: none;
-        margin: 0 0 0 2rem;
-        a {
-          display: inline-block;
-          text-decoration: none;
-          color: $lightText;
-          font-size: 1rem;
-          font-weight: bolder;
-        }
-      }
-    }
+  p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  .pr-0 {
+    margin-bottom: 1rem;
   }
 }

@@ -1,6 +1,0 @@
-@mixin flexmixin($flexDirection, $alignItems) {
-  display: flex;
-  flex-direction: $flexDirection;
-  align-items: $alignItems;
-  flex-wrap: wrap;
-}

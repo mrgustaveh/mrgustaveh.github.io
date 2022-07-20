@@ -1,47 +1,63 @@
-@import "./top";
-@import "./about";
-@import "./projects";
-@import "./images";
-@import "./contact";
-@import "./tools";
-@import "./animations";
-@import "./colors";
-@import "./mediaQuery";
-@import url("https://fonts.googleapis.com/css2?family=Poppins");
-@import url("https://fonts.googleapis.com/css2?family=Raleway");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import "./colors";
+@import "./mixins";
+@import "./doodle";
+@import "./button";
+@import "./spinner";
+@import "./top";
+@import "./projects";
+@import "./tools";
+@import "./contact";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 body {
   background-color: $primary;
-  color: $lightText;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
+  color: $textColor;
+  font-family: "Open Sans", sans-serif;
 
-.bottom {
-  width: fit-content;
-  margin: 1rem auto;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-
-  span {
-    font-family: "Open Sans", sans-serif;
+  #copy {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-decoration: underline;
   }
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+section {
+  @include mobile-padding();
+  width: 100vw;
+  min-height: 100vh;
+
+  @include tablet-upwards {
+    @include tablet-padding();
+  }
+
+  @include desktop {
+    @include desktop-padding();
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
 }

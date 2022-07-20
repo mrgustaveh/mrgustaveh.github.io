@@ -1,55 +1,81 @@
 @import "./colors";
-@import "./flexmixin";
+@import "./mixins";
 
 #projects {
-  width: 100%;
-  margin: 0;
+  .projects {
+    @include flexmixin(column, no-wrap, none, none);
 
-  h2 {
-    padding: 0 1rem;
-  }
+    & > div {
+      margin-bottom: 2rem;
 
-  .project {
-    padding: 1rem 1rem;
-    a {
-      @include flexmixin(row, center);
-      width: fit-content;
-      margin: 0 0 1rem 0;
-      text-decoration: none;
-      font-weight: 600;
-      color: $lightText;
-      span {
-        margin: 0 6px 0 0;
+      .link {
+        display: block;
+        text-decoration: none;
+        color: $textColor;
+        @include flexmixin(row, no-wrap, center, none);
+        gap: 0.5rem;
       }
-    }
-
-    div {
-      text-align: justify;
-      img {
-        width: 100%;
-        border-radius: 8px;
+      .app {
+        margin-bottom: 1rem;
       }
-      p {
-        color: $lightText;
-        font-size: 1rem;
-        font-weight: 500;
-        margin: 0 0 0.5rem 0;
-        &::selection {
-          background-color: $darkBgColor;
-          color: $lightText;
+      .source {
+        margin-top: 1rem;
+      }
+
+      .description {
+        @include desktop {
+          @include flexmixin(row, no-wrap, center, center);
+        }
+
+        .text {
+          .info {
+            @include tablet-upwards {
+              width: fit-content;
+            }
+
+            @include flexmixin(row, no-wrap, center, none);
+            gap: 0.25rem;
+
+            margin-top: 0.25rem;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+            background-color: $accent-light;
+            object-fit: contain;
+          }
+        }
+
+        .project-img {
+          @include tablet-upwards {
+            border-radius: 1rem;
+          }
+
+          @include desktop {
+            max-width: 30rem;
+            margin-left: 20px;
+          }
+
+          @include big-desktop {
+            max-width: 40rem;
+          }
+
+          width: 100%;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          border-radius: 0.5rem;
+          object-fit: fill;
         }
       }
-    }
-    .tech {
-      @include flexmixin(row, center);
-      margin: 1rem 0;
-      span {
-        background-color: $darkText;
-        color: $lightText;
-        font-weight: 600;
-        padding: 4px;
-        margin: 10px 10px 0 0;
-        border-radius: 20px;
+
+      .tech {
+        @include flexmixin(row, wrap, center, none);
+        gap: 0.5rem;
+
+        span {
+          padding: 0.5rem;
+          margin-right: 0.5rem;
+          border-radius: 0.5rem;
+          background-color: $accent;
+        }
       }
     }
   }
