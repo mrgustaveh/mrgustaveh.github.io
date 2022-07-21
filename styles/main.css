@@ -337,7 +337,7 @@
 }
 
 #contact .contacts {
-  transform: translate(0, 30%);
+  transform: translate(0, 15%);
 }
 @media (min-width: 600px) {
   #contact .contacts {
@@ -371,13 +371,12 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  border-radius: 0.65rem;
+  border-radius: 15rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 @media (min-width: 600px) {
   #contact .contacts a {
     width: 19rem;
-    border-radius: 15rem;
   }
 }
 #contact .contacts a span {
@@ -398,7 +397,7 @@
 }
 #contact .contacts .mail span,
 #contact .contacts .gitlab span {
-  color: #000000;
+  color: #333333;
 }
 #contact .contacts .mail img {
   width: 2.45rem;
@@ -417,6 +416,13 @@
 }
 #contact .contacts .lnkdn span {
   color: #ffffff;
+  font-weight: 500;
+}
+#contact .contacts .twtr {
+  background-color: #14c2fa;
+}
+#contact .contacts .twtr span {
+  color: #333333;
 }
 #contact .contacts .resume {
   background-color: #b30c04;
@@ -450,8 +456,6 @@ body #copy {
   width: fit-content;
   margin: 0 auto;
   font-size: 1rem;
-  font-weight: lighter;
-  text-decoration: underline;
 }
 
 ::-webkit-scrollbar {
