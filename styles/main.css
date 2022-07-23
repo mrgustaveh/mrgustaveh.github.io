@@ -62,13 +62,16 @@
   color: #bdbdbd;
   cursor: pointer;
   z-index: 2000;
+  opacity: 0.85;
+  background-image: linear-gradient(45deg, #42275a, #734b6d);
 }
 @media (min-width: 600px) {
   #scroll {
     bottom: 4%;
     right: 6%;
-    width: 10rem;
-    border-radius: 2rem;
+    width: 14rem;
+    height: 3.5rem;
+    border-radius: 3rem;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
   }
@@ -150,6 +153,15 @@
   font-size: 2.5rem;
   font-family: "Satisfy", cursive;
   margin-bottom: 3rem;
+  background-image: linear-gradient(to bottom, rgba(35, 91, 131, 0.85), rgba(244, 84, 52, 0.45));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+@media only screen and (min-width: 768px) {
+  #about .name {
+    font-size: 4rem;
+  }
 }
 #about p {
   text-align: justify;
@@ -387,20 +399,23 @@
 #contact .contacts a img {
   width: 3rem;
 }
-#contact .contacts .mail,
-#contact .contacts .gitlab {
-  background-color: #ffffff;
-}
-#contact .contacts .mail img,
-#contact .contacts .gitlab img {
-  width: 2.75rem;
-}
-#contact .contacts .mail span,
-#contact .contacts .gitlab span {
-  color: #333333;
+#contact .contacts .mail {
+  background-color: #fc434b;
 }
 #contact .contacts .mail img {
   width: 2.45rem;
+}
+#contact .contacts .mail span {
+  color: #ffffff;
+}
+#contact .contacts .gitlab {
+  background-color: #ffffff;
+}
+#contact .contacts .gitlab img {
+  width: 2.75rem;
+}
+#contact .contacts .gitlab span {
+  color: #333333;
 }
 #contact .contacts .github {
   background-color: #0c0c0c;
@@ -457,6 +472,11 @@ body #copy {
   margin: 0 auto;
   font-size: 1rem;
 }
+@media (max-width: 599px) {
+  body #copy {
+    display: none;
+  }
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -478,7 +498,7 @@ section {
   }
 }
 section .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: capitalize;

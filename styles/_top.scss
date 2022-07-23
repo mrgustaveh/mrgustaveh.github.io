@@ -1,13 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy");
+@import "./colors";
 @import "./mixins";
 
 #about {
   @include flexmixin(column, no-wrap, none, center);
 
   .name {
+    @include tablet-upwards {
+      font-size: 4rem;
+    }
+
     font-size: 2.5rem;
     font-family: "Satisfy", cursive;
     margin-bottom: 3rem;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(35, 91, 131, 0.85),
+      rgba(244, 84, 52, 0.45)
+    );
+    background-clip: text;
+    color: transparent;
   }
 
   p {
