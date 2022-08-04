@@ -26,7 +26,7 @@ scrollbtntxt.textContent = locations[1]?.title;
 
 setTimeout(() => {
   spinnercontainer.style.display = "none";
-}, 4500);
+}, 4000);
 
 const yeartoday = new Date().getUTCFullYear();
 year.textContent = yeartoday;
