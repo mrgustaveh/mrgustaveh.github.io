@@ -373,9 +373,7 @@
   }
 }
 #contact .contacts a {
-  max-height: -webkit-max-content;
-  max-height: -moz-max-content;
-  max-height: max-content;
+  width: 80%;
   display: block;
   text-decoration: none;
   display: flex !important;
@@ -386,69 +384,37 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 15rem;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 6px 24px rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  transition: all ease-in-out 0.25s;
 }
 @media (min-width: 600px) {
   #contact .contacts a {
     width: 19rem;
-    border-radius: 15rem;
   }
+}
+#contact .contacts a:hover {
+  background-color: #333333;
 }
 #contact .contacts a span {
   font-size: 1rem;
-  font-weight: 600;
   color: #bdbdbd;
 }
 #contact .contacts a img {
-  width: 2.5rem;
-}
-#contact .contacts .mail {
-  background-color: #fc434b;
+  width: 2.65rem;
 }
 #contact .contacts .mail img {
-  width: 2rem;
-}
-#contact .contacts .mail span {
-  color: #ffffff;
-  font-weight: 500;
-}
-#contact .contacts .gitlab {
-  background-color: #ffffff;
+  width: 2.25rem;
 }
 #contact .contacts .gitlab img {
-  width: 2rem;
-}
-#contact .contacts .gitlab span {
-  color: #333333;
-}
-#contact .contacts .github {
-  background-color: #0c0c0c;
+  width: 2.25rem;
 }
 #contact .contacts .github img {
-  width: 3.5rem;
-}
-#contact .contacts .lnkdn {
-  background-color: #235b83;
-}
-#contact .contacts .lnkdn img {
-  width: 2rem;
-}
-#contact .contacts .lnkdn span {
-  color: #ffffff;
-  font-weight: 500;
-}
-#contact .contacts .twtr {
-  background-color: #14c2fa;
-}
-#contact .contacts .twtr span {
-  color: #232323;
-}
-#contact .contacts .resume {
-  background-color: #b30c04;
+  width: 3.25rem;
 }
 #contact .contacts .resume img {
-  width: 2rem;
+  width: 2.25rem;
 }
 
 *,

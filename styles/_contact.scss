@@ -22,89 +22,55 @@
     a {
       @include tablet-portrait-up {
         width: 19rem;
-        border-radius: 15rem;
       }
 
-      max-height: max-content;
+      width: 80%;
       display: block;
       text-decoration: none;
       @include flexmixin(row, no-wrap, center, center);
       gap: 0.5rem;
       margin-bottom: 1rem;
       padding: 0.5rem;
-      border-radius: 0.5rem;
-      box-shadow: $boxShadow;
+      border-radius: 15rem;
+      box-shadow: $boxshadow01;
+      background-color: transparent;
+      transition: all ease-in-out 0.25s;
+
+      &:hover {
+        background-color: $accent;
+      }
 
       span {
         font-size: 1rem;
-        font-weight: 600;
         color: $textColor;
       }
 
       img {
-        width: 2.5rem;
+        width: 2.65rem;
       }
     }
 
     .mail {
-      background-color: $sunsetorange;
-
       img {
-        width: 2rem;
-      }
-
-      span {
-        color: $white;
-        font-weight: 500;
+        width: 2.25rem;
       }
     }
 
     .gitlab {
-      background-color: $white;
-
       img {
-        width: 2rem;
-      }
-
-      span {
-        color: $accent;
+        width: 2.25rem;
       }
     }
 
     .github {
-      background-color: $githubblack;
-
       img {
-        width: 3.5rem;
-      }
-    }
-
-    .lnkdn {
-      background-color: $blumine;
-
-      img {
-        width: 2rem;
-      }
-
-      span {
-        color: $white;
-        font-weight: 500;
-      }
-    }
-
-    .twtr {
-      background-color: $blueturqoise;
-
-      span {
-        color: $mineshaft;
+        width: 3.25rem;
       }
     }
 
     .resume {
-      background-color: $milanored;
-
       img {
-        width: 2rem;
+        width: 2.25rem;
       }
     }
   }
