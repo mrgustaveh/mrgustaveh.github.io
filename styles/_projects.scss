@@ -9,11 +9,13 @@
       margin-bottom: 2rem;
 
       .link {
+        width: fit-content;
         display: block;
         text-decoration: none;
         color: $textColor;
         @include flexmixin(row, no-wrap, center, none);
         gap: 0.5rem;
+        cursor: pointer;
       }
       .app {
         margin-bottom: 1rem;
@@ -75,6 +77,14 @@
           margin-right: 0.5rem;
           border-radius: 0.5rem;
           background-color: $accent;
+        }
+      }
+    }
+
+    #video_player {
+      .description {
+        @include tablet-upwards {
+          justify-content: space-between !important;
         }
       }
     }
