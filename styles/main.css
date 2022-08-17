@@ -114,7 +114,7 @@
 }
 #spinner_container #spinner .red {
   border-left-color: rgb(37, 3, 3);
-  --duration: 2.5s;
+  --duration: 2s;
 }
 #spinner_container #spinner .green {
   border-right-color: rgb(108, 173, 10);
@@ -150,6 +150,18 @@
   justify-content: center;
 }
 #about .name {
+  -webkit-animation: animate-name;
+          animation: animate-name;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-duration: 450ms;
+          animation-duration: 450ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
   font-size: 2.5rem;
   font-family: "Satisfy", cursive;
   margin-bottom: 3rem;
@@ -157,11 +169,47 @@
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  opacity: 0;
 }
 @media only screen and (min-width: 768px) {
   #about .name {
     font-size: 4rem;
   }
+}
+@-webkit-keyframes animate-name {
+  from {
+    opacity: 0;
+    margin-bottom: 2.5rem;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 3rem;
+  }
+}
+@keyframes animate-name {
+  from {
+    opacity: 0;
+    margin-bottom: 2.5rem;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 3rem;
+  }
+}
+#about .title {
+  -webkit-animation: animateion;
+          animation: animateion;
+  -webkit-animation-delay: 460ms;
+          animation-delay: 460ms;
+  -webkit-animation-duration: 450ms;
+          animation-duration: 450ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  opacity: 0;
 }
 #about p {
   text-align: justify;
@@ -169,6 +217,38 @@
 }
 #about .pr-0 {
   margin-bottom: 1rem;
+}
+#about .pr-0,
+#about .pr-01 {
+  -webkit-animation: animateion;
+          animation: animateion;
+  -webkit-animation-delay: 460ms;
+          animation-delay: 460ms;
+  -webkit-animation-duration: 450ms;
+          animation-duration: 450ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  opacity: 0;
+}
+@-webkit-keyframes animateion {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animateion {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #projects .projects {
@@ -286,23 +366,37 @@
 }
 @media only screen and (min-width: 768px) {
   #tools .tools {
-    transform: translate(0, 20%);
+    transform: translateY(30%);
   }
 }
 @media only screen and (min-width: 1024px) {
   #tools .tools {
+    transform: translateY(10%);
     height: unset;
-    transform: translate(0, 50%);
     gap: 2rem;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #tools .tools {
+    transform: translateY(50%);
   }
 }
 #tools .tools .js {
   background-color: #f3e31b;
 }
+#tools .tools .ts {
+  background-color: #047ccc;
+}
 #tools .tools .py {
   background-color: rgba(16, 14, 29, 0.9);
 }
 #tools .tools .node {
+  background-color: #40863e;
+}
+#tools .tools .sass {
+  background-color: #40863e;
+}
+#tools .tools .css {
   background-color: #40863e;
 }
 #tools .tools .react {
