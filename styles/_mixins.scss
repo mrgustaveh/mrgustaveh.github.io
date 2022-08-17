@@ -6,6 +6,22 @@
   justify-content: $justify;
 }
 
+@mixin useanimation(
+  $name,
+  $delay,
+  $duration,
+  $timing-func,
+  $fill-mode,
+  $direction
+) {
+  animation: $name;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-timing-function: $timing-func;
+  animation-fill-mode: $fill-mode;
+  animation-direction: $direction;
+}
+
 @mixin phone-only {
   @media (max-width: 599px) {
     @content;

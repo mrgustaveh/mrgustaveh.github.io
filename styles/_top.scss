@@ -9,6 +9,14 @@
     @include tablet-upwards {
       font-size: 4rem;
     }
+    @include useanimation(
+      animate-name,
+      100ms,
+      450ms,
+      ease-in,
+      forwards,
+      normal
+    );
 
     font-size: 2.5rem;
     font-family: "Satisfy", cursive;
@@ -20,6 +28,23 @@
     );
     background-clip: text;
     color: transparent;
+    opacity: 0;
+
+    @keyframes animate-name {
+      from {
+        opacity: 0;
+        margin-bottom: 2.5rem;
+      }
+      to {
+        opacity: 1;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .title {
+    @include useanimation(animateion, 460ms, 450ms, ease-in, forwards, normal);
+    opacity: 0;
   }
 
   p {
@@ -29,5 +54,20 @@
 
   .pr-0 {
     margin-bottom: 1rem;
+  }
+
+  .pr-0,
+  .pr-01 {
+    @include useanimation(animateion, 460ms, 450ms, ease-in, forwards, normal);
+    opacity: 0;
+  }
+
+  @keyframes animateion {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
