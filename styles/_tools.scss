@@ -7,17 +7,25 @@
     gap: 1rem;
 
     @include tablet-upwards {
-      transform: translate(0, 20%);
+      transform: translateY(30%);
     }
 
     @include desktop {
+      transform: translateY(10%);
       height: unset;
-      transform: translate(0, 50%);
       gap: 2rem;
+    }
+
+    @include big-desktop {
+      transform: translateY(50%);
     }
 
     .js {
       background-color: $lemon;
+    }
+
+    .ts {
+      background-color: $lochmara;
     }
 
     .py {
@@ -25,6 +33,14 @@
     }
 
     .node {
+      background-color: $goblin;
+    }
+
+    .sass {
+      background-color: $goblin;
+    }
+
+    .css {
       background-color: $goblin;
     }
 
