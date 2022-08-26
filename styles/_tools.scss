@@ -83,8 +83,6 @@
       height: 8rem;
       padding: 0.5rem;
       border-radius: 0.8rem;
-      background-color: $textColor;
-      box-shadow: $boxShadow;
 
       .img {
         max-width: 4rem;
@@ -94,7 +92,6 @@
         width: 100%;
         object-fit: contain;
         object-position: center;
-        border-radius: 0.5rem;
         align-self: center;
       }
     }

@@ -435,8 +435,6 @@
   height: 8rem;
   padding: 0.5rem;
   border-radius: 0.8rem;
-  background-color: #bdbdbd;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 #tools .tools > div .img {
   max-width: 4rem;
@@ -447,7 +445,6 @@
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
-  border-radius: 0.5rem;
   align-self: center;
 }
 
@@ -486,8 +483,9 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
+  border: 0;
   border-radius: 15rem;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 6px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   background-color: transparent;
   transition: all ease-in-out 0.25s;
 }
@@ -498,6 +496,7 @@
 }
 #contact .contacts a:hover {
   background-color: #333333;
+  box-shadow: none;
 }
 #contact .contacts a span {
   font-size: 1rem;
@@ -514,6 +513,9 @@
 }
 #contact .contacts .github img {
   width: 3.25rem;
+}
+#contact .contacts .lnkdn img {
+  width: 2.15rem;
 }
 #contact .contacts .resume img {
   width: 2.25rem;

@@ -30,13 +30,15 @@
       gap: 0.5rem;
       margin-bottom: 1rem;
       padding: 0.5rem;
+      border: 0;
       border-radius: 15rem;
-      box-shadow: $boxshadow01;
+      box-shadow: $boxShadow;
       background-color: transparent;
       transition: all ease-in-out 0.25s;
 
       &:hover {
         background-color: $accent;
+        box-shadow: none;
       }
 
       span {
@@ -64,6 +66,12 @@
     .github {
       img {
         width: 3.25rem;
+      }
+    }
+
+    .lnkdn {
+      img {
+        width: 2.15rem;
       }
     }
 
