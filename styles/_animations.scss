@@ -1,0 +1,121 @@
+.title_hidden {
+  opacity: 0;
+  margin-bottom: -1rem;
+  transition: all 2.5s;
+}
+
+.title_show {
+  opacity: 1;
+  margin-bottom: 1rem;
+}
+
+.app_title_hidden {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: all 1.5s;
+}
+
+.app_title_show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.app_description {
+  opacity: 0;
+  transform: translateX(-1.25%);
+  transition: all 1.5s;
+}
+
+.app_description_show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.img_hidden {
+  transform: translateX(2.5%);
+  transition: all 1.5s;
+}
+
+.img_show {
+  transform: translateX(0);
+}
+
+.tech_hidden {
+  opacity: 0;
+  transform: translateX(-5%);
+  transition: all 1.5s;
+}
+
+.tech_show {
+  opacity: 1;
+  transform: translateX(0);
+
+  & :nth-child(2) {
+    transition-delay: 200ms;
+  }
+  & :nth-child(3) {
+    transition-delay: 300ms;
+  }
+  & :nth-child(4) {
+    transition-delay: 400ms;
+  }
+}
+
+.tool_hidden {
+  opacity: 0;
+  transform: translateX(-10%);
+  filter: blur(4px);
+  transition: all 1.5s;
+}
+
+.tool_show {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+
+  & :nth-child(2) {
+    transition-delay: 350ms;
+  }
+  & :nth-child(3) {
+    transition-delay: 450ms;
+  }
+  & :nth-child(4) {
+    transition-delay: 550ms;
+  }
+  & :nth-child(5) {
+    transition-delay: 650ms;
+  }
+  & :nth-child(6) {
+    transition-delay: 750ms;
+  }
+  & :nth-child(7) {
+    transition-delay: 850ms;
+  }
+  & :nth-child(8) {
+    transition-delay: 950ms;
+  }
+  & :nth-child(9) {
+    transition-delay: 1.5s;
+  }
+  & :nth-child(10) {
+    transition-delay: 2.5s;
+  }
+  & :nth-child(11) {
+    transition-delay: 3.5s;
+  }
+  & :nth-child(12) {
+    transition-delay: 4.5s;
+  }
+  & :nth-child(13) {
+    transition-delay: 5.5s;
+  }
+  & :nth-child(14) {
+    transition-delay: 6.5s;
+  }
+  & :nth-child(15) {
+    transition-delay: 7.5s;
+  }
+  & :nth-child(16) {
+    transition-delay: 8s;
+  }
+}

@@ -16,6 +16,7 @@
         @include flexmixin(row, no-wrap, center, none);
         gap: 0.5rem;
         cursor: pointer;
+        font-weight: 600;
       }
       .app {
         margin-bottom: 1rem;

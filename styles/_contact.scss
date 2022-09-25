@@ -32,12 +32,12 @@
       padding: 0.5rem;
       border: 0;
       border-radius: 15rem;
-      box-shadow: $boxShadow;
+      box-shadow: $boxshadow;
       background-color: transparent;
       transition: all ease-in-out 0.25s;
 
       &:hover {
-        background-color: $accent;
+        background-color: $accent-light;
         box-shadow: none;
       }
 
