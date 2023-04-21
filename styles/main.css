@@ -106,10 +106,8 @@
   border-style: solid;
   border-color: transparent;
   mix-blend-mode: overlay;
-  -webkit-animation: animateprogress var(--duration) ease-in-out infinite;
-          animation: animateprogress var(--duration) ease-in-out infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation: animateprogress var(--duration) ease-in-out infinite;
+  animation-timing-function: ease;
   pointer-events: none;
 }
 #spinner_container #spinner .red {
@@ -123,15 +121,6 @@
 #spinner_container #spinner .blue {
   border-top-color: rgb(8, 8, 70);
   --duration: 1.5s;
-}
-
-@-webkit-keyframes animateprogress {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes animateprogress {
@@ -150,18 +139,12 @@
   justify-content: center;
 }
 #about .name {
-  -webkit-animation: animate-name;
-          animation: animate-name;
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-  -webkit-animation-duration: 450ms;
-          animation-duration: 450ms;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation: animate-name;
+  animation-delay: 100ms;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
   font-size: 2.5rem;
   font-family: "Satisfy", cursive;
   margin-bottom: 3rem;
@@ -176,16 +159,6 @@
     font-size: 4rem;
   }
 }
-@-webkit-keyframes animate-name {
-  from {
-    opacity: 0;
-    margin-bottom: 2.5rem;
-  }
-  to {
-    opacity: 1;
-    margin-bottom: 3rem;
-  }
-}
 @keyframes animate-name {
   from {
     opacity: 0;
@@ -197,18 +170,12 @@
   }
 }
 #about .title {
-  -webkit-animation: animateion;
-          animation: animateion;
-  -webkit-animation-delay: 460ms;
-          animation-delay: 460ms;
-  -webkit-animation-duration: 450ms;
-          animation-duration: 450ms;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation: animateion;
+  animation-delay: 460ms;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
   opacity: 0;
 }
 #about p {
@@ -220,27 +187,13 @@
 }
 #about .pr-0,
 #about .pr-01 {
-  -webkit-animation: animateion;
-          animation: animateion;
-  -webkit-animation-delay: 460ms;
-          animation-delay: 460ms;
-  -webkit-animation-duration: 450ms;
-          animation-duration: 450ms;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation: animateion;
+  animation-delay: 460ms;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
   opacity: 0;
-}
-@-webkit-keyframes animateion {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 @keyframes animateion {
   from {
@@ -262,7 +215,6 @@
   margin-bottom: 2rem;
 }
 #projects .projects > div .link {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: block;
@@ -308,7 +260,6 @@
 }
 @media only screen and (min-width: 768px) {
   #projects .projects > div .description .text .info {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -473,7 +424,8 @@
     transform: translate(0, 100%);
   }
 }
-#contact .contacts a {
+#contact .contacts a,
+#contact .contacts button {
   display: block;
   text-decoration: none;
   display: flex !important;
@@ -483,31 +435,38 @@
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 0;
-  border-radius: 15rem;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 6px 24px rgba(0, 0, 0, 0.05);
+  padding: 0.25rem;
+  border: 1px solid #1c3364;
+  border-radius: 6px;
   background-color: transparent;
   transition: all ease-in-out 0.25s;
 }
 @media (min-width: 600px) {
-  #contact .contacts a {
+  #contact .contacts a,
+  #contact .contacts button {
     width: 19rem;
   }
 }
-#contact .contacts a:hover {
-  background-color: #333333;
+#contact .contacts a:hover,
+#contact .contacts button:hover {
+  background-color: #1c3364;
   box-shadow: none;
 }
-#contact .contacts a span {
+#contact .contacts a span,
+#contact .contacts button span {
   font-size: 1rem;
   color: #bdbdbd;
 }
-#contact .contacts a img {
+#contact .contacts a img,
+#contact .contacts button img {
   width: 2.65rem;
 }
-#contact .contacts .mail img {
-  width: 2.25rem;
+#contact .contacts .mail {
+  height: 2.765rem;
+  cursor: pointer;
+}
+#contact .contacts .mail .material-icons-round {
+  font-size: 1.65rem;
 }
 #contact .contacts .gitlab img {
   width: 2.25rem;
@@ -662,7 +621,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 body #copy {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
@@ -671,6 +629,9 @@ body #copy {
   body #copy {
     display: none;
   }
+}
+body #copy a {
+  color: #bdbdbd;
 }
 
 ::-webkit-scrollbar {
