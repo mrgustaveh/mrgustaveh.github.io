@@ -1,6 +1,9 @@
 const spinnercontainer = document.querySelector("#spinner_container");
 const scrollbtn = document.querySelector("#scroll");
 const scrollbtntxt = document.querySelector("#btn_text");
+const copyemailbtn = document.querySelector("#copyemail");
+const copytxt = document.querySelector("#copytxt");
+const copyicon = document.querySelector("#copyicon");
 const year = document.querySelector("#year");
 
 const locations = [
@@ -27,6 +30,17 @@ scrollbtntxt.textContent = locations[1]?.title;
 setTimeout(() => {
   spinnercontainer.style.display = "none";
 }, 1650);
+
+copyemailbtn.addEventListener("click", () => {
+  navigator.clipboard.writeText("developer.aj12@gmail.com");
+  copyicon.textContent = "done";
+  copytxt.textContent = "Email Copied";
+
+  setTimeout(() => {
+    copytxt.textContent = "Copy Email";
+    copyicon.textContent = "content_copy";
+  }, 2000);
+});
 
 const yeartoday = new Date().getUTCFullYear();
 year.textContent = yeartoday;
