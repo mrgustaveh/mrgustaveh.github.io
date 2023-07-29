@@ -1,69 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
-@import "./colors";
-@import "./mixins";
-@import "./doodle";
-@import "./button";
-@import "./spinner";
-@import "./top";
-@import "./projects";
-@import "./tools";
-@import "./contact";
-@import "./animations";
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+  @import "./colors";
+  @import "./mixins";
+  @import "./doodle";
+  @import "./button";
+  @import "./spinner";
+  @import "./top";
+  @import "./projects";
+  @import "./tools";
+  @import "./contact";
+  @import "./animations";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  -ms-overflow-style: none;
-  scrollbar-width: 0;
-}
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background-color: $primary;
-  color: $textColor;
-  font-family: "Open Sans", sans-serif;
+  body {
+    background-color: $primary;
+    color: $textColor;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
 
-  #copy {
-    @include phone-only {
-      display: none;
+    #copy {
+      @include phone-only {
+        display: none;
+      }
+
+      width: fit-content;
+      margin: 0 auto;
+
+      a {
+        color: $textColor;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  section {
+    @include mobile-padding();
+    width: 100vw;
+    min-height: 100vh;
+
+    @include tablet-upwards {
+      @include tablet-padding();
     }
 
-    width: fit-content;
-    margin: 0 auto;
+    @include desktop {
+      @include desktop-padding();
+    }
 
-    a {
-      color: $textColor;
+    .title {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
     }
   }
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-section {
-  @include mobile-padding();
-  width: 100vw;
-  min-height: 100vh;
-
-  @include tablet-upwards {
-    @include tablet-padding();
-  }
-
-  @include desktop {
-    @include desktop-padding();
-  }
-
-  .title {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-transform: capitalize;
-  }
-}
