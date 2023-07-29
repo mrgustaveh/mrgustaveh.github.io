@@ -5,7 +5,7 @@
   .projects {
     @include flexmixin(column, no-wrap, none, none);
 
-    & > div {
+    &>div {
       margin-bottom: 2rem;
 
       .link {
@@ -18,9 +18,11 @@
         cursor: pointer;
         font-weight: 600;
       }
+
       .app {
         margin-bottom: 1rem;
       }
+
       .source {
         margin-top: 1rem;
       }
@@ -49,7 +51,7 @@
 
         .project-img {
           @include tablet-upwards {
-            border-radius: 1rem;
+            border-radius: 0.5rem;
           }
 
           @include desktop {
@@ -76,7 +78,7 @@
         span {
           padding: 0.5rem;
           margin-right: 0.5rem;
-          border-radius: 0.5rem;
+          border-radius: 0.375rem;
           background-color: $accent;
         }
       }
