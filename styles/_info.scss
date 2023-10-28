@@ -1,0 +1,179 @@
+@import "./colors";
+@import "./mixins";
+
+#info {
+  @include flexmixin(row, no-wrap, center, space-between);
+  width: 100vw;
+  height: 100vh;
+
+  #left {
+    position: fixed;
+    left: 0;
+    width: 38rem;
+    height: 100vh;
+    border: 0;
+    border-right: 0.5px dashed $border_bg;
+    gap: 2rem;
+    @include flexmixin(column, no-wrap, center, center);
+
+    #about {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      h2 {
+        margin-bottom: 2rem;
+        color: $text_primary_dark;
+      }
+
+      p {
+        text-align: justify;
+        color: $text_secondary;
+      }
+
+      .pr-01 {
+        margin-top: 0.5rem;
+      }
+    }
+
+    #services {
+      width: 96%;
+      padding: 0.5rem;
+      background-color: rgba(38, 38, 38, 0.5);
+      border-radius: 0.5rem;
+
+      .srv {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: 0;
+        border-top: 0.5px dashed $border_bg;
+        border-bottom: 0.5px dashed $border_bg;
+      }
+
+      div {
+        gap: 0.5rem;
+        @include flexmixin(column, no-wrap, flex-start, flex-start);
+
+        p {
+          font-weight: 500;
+          color: $text_primary_dark;
+
+          span {
+            font-size: 14px;
+            color: $text_secondary;
+          }
+        }
+
+        span {
+          color: $text_secondary;
+        }
+      }
+    }
+  }
+
+  #right {
+    position: fixed;
+    right: 0;
+    width: calc(100vw - 38rem);
+    height: 100vh;
+
+    #projects {
+      width: 100%;
+      height: 100%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-top: 4.75rem;
+
+      .indicator {
+        @include flexmixin(row, no-wrap, center, space-between);
+
+        .btns {
+          gap: 1rem;
+          @include flexmixin(row, no-wrap, center, flex-end);
+
+          button {
+            padding: 0.5rem;
+            border: 0;
+            border-radius: 50%;
+            background-color: rgba(38, 38, 38, 0.75);
+            cursor: pointer;
+            @include flexmixin(row, no-wrap, center, center);
+            transition: all ease-in-out 0.5s;
+
+            span {
+              color: $text_primary_dark;
+            }
+
+            &:hover {
+              background-color: $bg_secondary;
+            }
+          }
+        }
+      }
+
+      .projects-title {
+        color: $text_primary_dark;
+      }
+
+      .projects {
+        margin-top: 1rem;
+        gap: 1rem;
+        overflow-x: scroll;
+        @include flexmixin(row, no-wrap, center, center);
+
+        #weathor {
+          display: block !important;
+        }
+
+        #autoplay,
+        #countryquiz {
+          display: none !important;
+        }
+
+        div {
+          width: 100%;
+
+          .title-links {
+            margin-bottom: 1.5rem;
+            @include flexmixin(row, no-wrap, center, space-between);
+
+            .title {
+              font-size: 1.125rem;
+              font-weight: 600;
+              color: $text_primary_dark;
+            }
+
+            .links {
+              @include flexmixin(row, no-wrap, center, flex-end);
+              gap: 1rem;
+
+              a {
+                @include flexmixin(row, no-wrap, center, center);
+                gap: 0.5rem;
+                color: $text_secondary;
+                text-decoration: none;
+
+                &:hover {
+                  color: $text_primary;
+                }
+              }
+            }
+          }
+
+          .description {
+            p {
+              margin-bottom: 1rem;
+              color: $text_secondary;
+            }
+
+            .project-img {
+              width: 100%;
+              border-radius: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

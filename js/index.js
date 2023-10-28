@@ -1,46 +1,27 @@
-const spinnercontainer = document.querySelector("#spinner_container");
-const scrollbtn = document.querySelector("#scroll");
-const scrollbtntxt = document.querySelector("#btn_text");
-const copyemailbtn = document.querySelector("#copyemail");
-const copytxt = document.querySelector("#copytxt");
-const copyicon = document.querySelector("#copyicon");
-const year = document.querySelector("#year");
+const weathorbtn = document.querySelector(".weathorbtn");
+const autoplaybtn = document.querySelector(".autoplaybtn");
+const countryquizbtn = document.querySelector(".countryquizbtn");
 
-const locations = [
-  { id: 0, title: "about" },
-  { id: 1, title: "projects" },
-  { id: 2, title: "tools" },
-  { id: 3, title: "contact" },
-  { id: 4, title: "about" },
-];
+const projectsids = ["weathor", "autoplay", "countryquiz"];
 
-let locindex = 1;
-const pagelocation = "#";
+const showcurrentproct = (showid, hiddenids) => {
+  document.querySelector(`#${showid}`).style.cssText =
+    "display:block !important;";
 
-scrollbtn.addEventListener("click", () => {
-  if (locindex === 4) locindex = locindex - 4;
-  window.location = pagelocation + locations[locindex].title;
-  scrollbtntxt.textContent = locations[locindex + 1].title;
+  hiddenids.map((projid) => {
+    document.querySelector(`#${projid}`).style.cssText =
+      "display:none !important;";
+  });
+};
 
-  locindex += 1;
+weathorbtn.addEventListener("click", () => {
+  showcurrentproct("weathor", ["autoplay", "countryquiz"]);
 });
 
-scrollbtntxt.textContent = locations[1]?.title;
-
-setTimeout(() => {
-  spinnercontainer.style.display = "none";
-}, 1650);
-
-copyemailbtn.addEventListener("click", () => {
-  navigator.clipboard.writeText("developer.aj12@gmail.com");
-  copyicon.textContent = "done";
-  copytxt.textContent = "Email Copied";
-
-  setTimeout(() => {
-    copytxt.textContent = "Copy Email";
-    copyicon.textContent = "content_copy";
-  }, 2000);
+autoplaybtn.addEventListener("click", () => {
+  showcurrentproct("autoplay", ["weathor", "countryquiz"]);
 });
 
-const yeartoday = new Date().getUTCFullYear();
-year.textContent = yeartoday;
+countryquizbtn.addEventListener("click", () => {
+  showcurrentproct("countryquiz", ["weathor", "autoplay"]);
+});

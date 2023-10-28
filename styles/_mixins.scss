@@ -1,25 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+@mixin usebasefont() {
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin useintronamefont() {
+  font-family: "Sacramento", cursive;
+}
+
 @mixin flexmixin($direction, $wrap, $align, $justify) {
   display: flex !important;
   flex-direction: $direction;
   flex-wrap: $wrap;
   align-items: $align;
   justify-content: $justify;
-}
-
-@mixin useanimation(
-  $name,
-  $delay,
-  $duration,
-  $timing-func,
-  $fill-mode,
-  $direction
-) {
-  animation: $name;
-  animation-delay: $delay;
-  animation-duration: $duration;
-  animation-timing-function: $timing-func;
-  animation-fill-mode: $fill-mode;
-  animation-direction: $direction;
 }
 
 @mixin phone-only {
@@ -56,16 +51,4 @@
   @media only screen and (min-width: 1300px) {
     @content;
   }
-}
-
-@mixin mobile-padding {
-  padding: 1rem;
-}
-
-@mixin tablet-padding {
-  padding: 1rem 3rem;
-}
-
-@mixin desktop-padding {
-  padding: 1rem 6rem;
 }

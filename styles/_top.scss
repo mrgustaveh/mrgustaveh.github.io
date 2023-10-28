@@ -2,72 +2,36 @@
 @import "./colors";
 @import "./mixins";
 
-#about {
-  @include flexmixin(column, no-wrap, none, center);
+.intro-contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0.25rem;
+  border: 0;
+  border-bottom: 0.5px dashed $border_bg;
+  background-color: $bg_primary;
+  z-index: 2000;
+  @include flexmixin(row, no-wrap, center, space-between);
 
   .name {
-    @include tablet-upwards {
-      font-size: 4rem;
-    }
-    @include useanimation(
-      animate-name,
-      100ms,
-      450ms,
-      ease-in,
-      forwards,
-      normal
-    );
-
+    margin-left: 0.5rem;
     font-size: 2.5rem;
-    font-family: "Satisfy", cursive;
-    margin-bottom: 3rem;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(35, 91, 131, 0.85),
-      rgba(244, 84, 52, 0.45)
-    );
-    background-clip: text;
-    color: transparent;
-    opacity: 0;
-
-    @keyframes animate-name {
-      from {
-        opacity: 0;
-        margin-bottom: 2.5rem;
-      }
-      to {
-        opacity: 1;
-        margin-bottom: 3rem;
-      }
-    }
+    @include useintronamefont();
   }
 
-  .title {
-    @include useanimation(animateion, 460ms, 450ms, ease-in, forwards, normal);
-    opacity: 0;
-  }
+  .contact {
+    margin-right: 0.5rem;
+    gap: 1rem;
+    @include flexmixin(row, no-wrap, center, center);
 
-  p {
-    text-align: justify;
-    font-size: 1rem;
-  }
-
-  .pr-0 {
-    margin-bottom: 1rem;
-  }
-
-  .pr-0,
-  .pr-01 {
-    @include useanimation(animateion, 460ms, 450ms, ease-in, forwards, normal);
-    opacity: 0;
-  }
-
-  @keyframes animateion {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
+    .contactitem {
+      width: 2rem;
+      height: 2rem;
+      border: 0.25px solid $border_bg;
+      border-radius: 0.375rem;
+      background-color: $bg_secondary;
+      @include flexmixin(row, no-wrap, center, center);
     }
   }
 }
