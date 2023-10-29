@@ -188,7 +188,8 @@
   display: none !important;
 }
 #info #right #projects .projects div {
-  width: 100%;
+  width: 96%;
+  margin-top: 0.5rem;
 }
 #info #right #projects .projects div .title-links {
   margin-bottom: 1.5rem;
