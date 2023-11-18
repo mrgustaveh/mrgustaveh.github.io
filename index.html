@@ -55,16 +55,6 @@
         >
           <img src="./img/email.svg" />
         </a>
-
-        <a
-          id="doc"
-          download
-          class="contactitem"
-          href="./img/Antony_Mburu_Resume.pdf"
-          title="Resume"
-        >
-          <img src="./img/document.svg" />
-        </a>
       </div>
     </div>
 
@@ -113,29 +103,264 @@
             </p>
           </div>
         </div>
+
+        <p class="copyright">
+          &copy; <a href="https://github.com/mburuanthony">mburuanthony</a>
+          <span class="yeartext"></span>
+        </p>
       </div>
 
       <div id="right">
         <div id="projects">
           <div class="indicator">
-            <h2 class="title projects-title">Sample projects</h2>
+            <h2 class="title projects-title">Featured Projects</h2>
 
             <div class="btns">
-              <button class="weathorbtn" title="weathor">
-                <span class="material-icons-outlined"> cloud </span>
+              <button class="cat_design" title="Featured Design Projects">
+                <span class="cat_title">design</span>
+                <span class="material-icons-outlined">architecture</span>
               </button>
 
-              <button class="autoplaybtn" title="autoplay">
+              <button class="cat_develop" title="Featured Development Projects">
+                <span class="cat_title">development</span>
+                <span class="material-icons-outlined"> code </span>
+              </button>
+
+              <div class="vertical_divider"></div>
+
+              <button class="veestrmdesignbtn proj_designbtn" title="veestream">
+                <img src="./img/veestream.svg" alt="oasis stays" />
+              </button>
+
+              <button class="autoplaydesignbtn proj_designbtn" title="autoplay">
                 <span class="material-icons-outlined"> music_note </span>
               </button>
 
-              <button class="countryquizbtn" title="country quiz">
+              <button class="oasisdesignbtn proj_designbtn" title="oasis">
+                <img src="./img/oasis.svg" alt="oasis stays" />
+              </button>
+
+              <button class="autoplaybtn proj_developmntbnt" title="autoplay">
+                <span class="material-icons-outlined"> music_note </span>
+              </button>
+
+              <button class="oasisbtn proj_developmntbnt" title="oasis">
+                <img src="./img/oasis.svg" alt="oasis stays" />
+              </button>
+
+              <button class="weathorbtn proj_developmntbnt" title="weathor">
+                <span class="material-icons-outlined"> cloud </span>
+              </button>
+
+              <button
+                class="countryquizbtn proj_developmntbnt"
+                title="country quiz"
+              >
                 <span class="material-icons-outlined"> flag </span>
               </button>
             </div>
           </div>
 
           <div class="projects">
+            <div id="veestream">
+              <div class="title-links">
+                <p class="title">Veestream</p>
+              </div>
+
+              <div class="description">
+                <p class="app_description">
+                  Veestream is an upcoming app that seamlessly merges the worlds
+                  of audio and visual artistry. Veestream revolutionizes your
+                  multimedia experience by transforming your favorite audio
+                  files and images into custom-designed vinyl-like records.
+                </p>
+
+                <iframe
+                  style="
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 0.5rem;
+                  "
+                  width="100%"
+                  height="500"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fj7cae9uZYpwtjdRDDiyiwG%2Fvinyl-player%3Ftype%3Ddesign%26node-id%3D6-2%26t%3DfReCHGZ0pNx4Fy8R-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D6%253A2%26mode%3Ddesign"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div id="autoplaydesign">
+              <div class="title-links">
+                <p class="title">AutoPlay | Design</p>
+                <div class="links">
+                  <a
+                    class="link app app_title_hidden"
+                    id="imageuploader"
+                    target="_blank"
+                    href="https://auto-play.vercel.app/"
+                    ><span class="material-icons">public</span> auto-play</a
+                  >
+
+                  <a
+                    class="link source app_title_hidden"
+                    href="https://github.com/mburuanthony/auto.play"
+                    target="_blank"
+                  >
+                    <span class="material-icons-outlined"> lock </span>
+                    source code</a
+                  >
+                </div>
+              </div>
+
+              <div class="description">
+                <p class="app_description">
+                  Auto-play is a minimal web audio player built with Next Js
+                  combining Typescript, JavaScript and SCSS. It provides basic
+                  audio controls (rewind, fast-forward, next previous, loop &
+                  mute). As well as lyrics for the associated audio. Alerts and
+                  a means to follow current playback, within settings (
+                  <span class="material-icons-outlined"> settings </span> ).
+                </p>
+
+                <iframe
+                  style="
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 0.5rem;
+                  "
+                  width="100%"
+                  height="500"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FaFFaXmdkfYltsLj47tvcTG%2Fautoplay%3Ftype%3Ddesign%26node-id%3D3-5%26t%3DQrMX2l1JaAyQ9gEc-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D3%253A5%26mode%3Ddesign"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <div id="oasisstaysdesign">
+              <div class="title-links">
+                <p class="title">Oasis | Design</p>
+                <div class="links">
+                  <a
+                    class="link app app_title_hidden"
+                    id="imageuploader"
+                    target="_blank"
+                    href="https://oasis-nine-sand.vercel.app/"
+                    ><span class="material-icons">public</span> oasis-stays</a
+                  >
+
+                  <a
+                    class="link source app_title_hidden"
+                    href="https://github.com/mburuanthony/oasis"
+                    target="_blank"
+                  >
+                    <span class="material-icons-outlined"> lock </span>
+                    source code</a
+                  >
+                </div>
+              </div>
+
+              <div class="description">
+                <p class="app_description">
+                  An exciting web design & development project for Oasis stays,
+                  a dynamic and customer-focused rental home business. The
+                  primary goal of this project was to create a user-friendly and
+                  visually appealing website that enhances the online presence
+                  of the business.
+                </p>
+                <iframe
+                  style="
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 0.5rem;
+                  "
+                  width="100%"
+                  height="500"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvhyzmodLyYKqqLg2w4iYaV%2Foasis%3Ftype%3Ddesign%26node-id%3D3-9%26t%3Df7f2s7rKvLGrGYFX-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D3%253A9%26mode%3Ddesign"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div id="autoplay">
+              <div class="title-links">
+                <p class="title">AutoPlay</p>
+                <div class="links">
+                  <a
+                    class="link app app_title_hidden"
+                    id="imageuploader"
+                    target="_blank"
+                    href="https://auto-play.vercel.app/"
+                    ><span class="material-icons">public</span> auto-play</a
+                  >
+
+                  <a
+                    class="link source app_title_hidden"
+                    href="https://github.com/mburuanthony/auto.play"
+                    target="_blank"
+                  >
+                    <span class="material-icons-outlined"> lock </span>
+                    source code</a
+                  >
+                </div>
+              </div>
+
+              <div class="description">
+                <p class="app_description">
+                  Auto-play is a minimal web audio player built with Next Js
+                  combining Typescript, JavaScript and SCSS. It provides basic
+                  audio controls (rewind, fast-forward, next previous, loop &
+                  mute). As well as lyrics for the associated audio. Alerts and
+                  a means to follow current playback, within settings (
+                  <span class="material-icons-outlined"> settings </span> ).
+                </p>
+
+                <img
+                  class="project-img img_hidden"
+                  src="./img/auto-play.png"
+                  loading="lazy"
+                  alt="autoplay project"
+                />
+              </div>
+            </div>
+
+            <div id="oasisstays">
+              <div class="title-links">
+                <p class="title">Oasis</p>
+                <div class="links">
+                  <a
+                    class="link app app_title_hidden"
+                    id="imageuploader"
+                    target="_blank"
+                    href="https://oasis-nine-sand.vercel.app/"
+                    ><span class="material-icons">public</span> oasis-stays</a
+                  >
+
+                  <a
+                    class="link source app_title_hidden"
+                    href="https://github.com/mburuanthony/oasis"
+                    target="_blank"
+                  >
+                    <span class="material-icons-outlined"> lock </span>
+                    source code</a
+                  >
+                </div>
+              </div>
+
+              <div class="description">
+                <p class="app_description">
+                  An exciting web design & development project for Oasis stays,
+                  a dynamic and customer-focused rental home business. The
+                  primary goal of this project was to create a user-friendly and
+                  visually appealing website that enhances the online presence
+                  of the business.
+                </p>
+                <img
+                  class="project-img img_hidden"
+                  src="./img/oasis.png"
+                  loading="lazy"
+                  alt="autoplay project"
+                />
+              </div>
+            </div>
+
             <div id="weathor">
               <div class="title-links">
                 <p class="title">Weathor</p>
@@ -172,47 +397,6 @@
                   src="./img/weather.PNG"
                   loading="lazy"
                   alt="theweather project"
-                />
-              </div>
-            </div>
-
-            <div id="autoplay">
-              <div class="title-links">
-                <p class="title">AutoPlay</p>
-                <div class="links">
-                  <a
-                    class="link app app_title_hidden"
-                    id="imageuploader"
-                    target="_blank"
-                    href="https://auto-play.vercel.app/"
-                    ><span class="material-icons">public</span> auto-play</a
-                  >
-
-                  <a
-                    class="link source app_title_hidden"
-                    href="https://github.com/mburuanthony/auto.play"
-                    target="_blank"
-                  >
-                    <span class="material-icons-outlined"> lock </span>
-                    source code</a
-                  >
-                </div>
-              </div>
-
-              <div class="description">
-                <p class="app_description">
-                  Auto-play is a minimal web audio player built with Next Js
-                  combining Typescript, JavaScript and SCSS. It provides basic
-                  audio controls (rewind, fast-forward, next previous, loop &
-                  mute). As well as lyrics for the associated audio. Alerts and
-                  a means to follow current playback, within settings (
-                  <span class="material-icons-outlined"> settings </span> ).
-                </p>
-                <img
-                  class="project-img img_hidden"
-                  src="./img/auto-play.png"
-                  loading="lazy"
-                  alt="autoplay project"
                 />
               </div>
             </div>
