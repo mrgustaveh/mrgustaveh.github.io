@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 .intro-contact {
   position: fixed;
@@ -72,6 +75,7 @@
   justify-content: center;
 }
 #info #left #about {
+  margin-top: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -84,12 +88,12 @@
   color: #7f7f7f;
 }
 #info #left #about .pr-01 {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 #info #left #services {
   width: 96%;
   padding: 0.5rem;
-  background-color: rgba(38, 38, 38, 0.5);
+  background-color: rgb(38, 38, 38);
   border-radius: 0.5rem;
 }
 #info #left #services .srv {
@@ -119,6 +123,24 @@
 }
 #info #left #services div span {
   color: #7f7f7f;
+}
+#info #left .copyright {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #7f7f7f;
+}
+#info #left .copyright a {
+  font-family: "Sacramento", cursive;
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #7f7f7f;
+}
+#info #left .copyright .yeartext {
+  font-family: "Raleway", sans-serif;
 }
 #info #right {
   position: fixed;
@@ -153,6 +175,8 @@
   border: 0;
   border-radius: 50%;
   background-color: rgba(38, 38, 38, 0.75);
+  outline: none;
+  outline-color: none;
   cursor: pointer;
   display: flex !important;
   flex-direction: row;
@@ -167,6 +191,30 @@
 #info #right #projects .indicator .btns button:hover {
   background-color: #323232;
 }
+#info #right #projects .indicator .btns .cat_design,
+#info #right #projects .indicator .btns .cat_develop {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  border-radius: 2rem;
+  outline: none;
+  outline-color: none;
+}
+#info #right #projects .indicator .btns .cat_design .cat_title,
+#info #right #projects .indicator .btns .cat_develop .cat_title {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: rgba(248, 250, 252, 0.78);
+}
+#info #right #projects .indicator .btns .vertical_divider {
+  width: 1px;
+  height: 1.5rem;
+  background-color: rgba(248, 250, 252, 0.2);
+}
 #info #right #projects .projects-title {
   color: rgba(248, 250, 252, 0.78);
 }
@@ -180,11 +228,13 @@
   align-items: center;
   justify-content: center;
 }
-#info #right #projects .projects #weathor {
-  display: block !important;
-}
+#info #right #projects .projects #veestream,
+#info #right #projects .projects #autoplaydesign,
+#info #right #projects .projects #oasisstaysdesign,
 #info #right #projects .projects #autoplay,
-#info #right #projects .projects #countryquiz {
+#info #right #projects .projects #oasisstays,
+#info #right #projects .projects #countryquiz,
+#info #right #projects .projects #weathor {
   display: none !important;
 }
 #info #right #projects .projects div {
@@ -203,6 +253,8 @@
   font-size: 1.125rem;
   font-weight: 600;
   color: rgba(248, 250, 252, 0.78);
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 #info #right #projects .projects div .title-links .links {
   display: flex !important;

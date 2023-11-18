@@ -17,6 +17,7 @@
     @include flexmixin(column, no-wrap, center, center);
 
     #about {
+      margin-top: 2rem;
       padding-left: 1rem;
       padding-right: 1rem;
 
@@ -31,7 +32,7 @@
       }
 
       .pr-01 {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
       }
     }
 
@@ -70,6 +71,23 @@
         }
       }
     }
+
+    .copyright {
+      @include flexmixin(row, no-wrap, center, center);
+      gap: 0.5rem;
+      color: $text_secondary;
+
+      a {
+        @include useintronamefont();
+        font-size: 1.75rem;
+        text-decoration: none;
+        color: $text_secondary;
+      }
+
+      .yeartext {
+        @include usefontraleway();
+      }
+    }
   }
 
   #right {
@@ -97,6 +115,8 @@
             border: 0;
             border-radius: 50%;
             background-color: rgba(38, 38, 38, 0.75);
+            outline: none;
+            outline-color: none;
             cursor: pointer;
             @include flexmixin(row, no-wrap, center, center);
             transition: all ease-in-out 0.5s;
@@ -108,6 +128,28 @@
             &:hover {
               background-color: $bg_secondary;
             }
+          }
+
+          .cat_design,
+          .cat_develop {
+            @include flexmixin(row, no-wrap, center, center);
+            gap: 0.25rem;
+            padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+            border-radius: 2rem;
+            outline: none;
+            outline-color: none;
+
+            .cat_title {
+              font-size: 0.875rem;
+              text-transform: capitalize;
+              color: $text_primary_dark;
+            }
+          }
+
+          .vertical_divider {
+            width: 1px;
+            height: 1.5rem;
+            background-color: $border_bg;
           }
         }
       }
@@ -122,12 +164,13 @@
         overflow-x: scroll;
         @include flexmixin(row, no-wrap, center, center);
 
-        #weathor {
-          display: block !important;
-        }
-
+        #veestream,
+        #autoplaydesign,
+        #oasisstaysdesign,
         #autoplay,
-        #countryquiz {
+        #oasisstays,
+        #countryquiz,
+        #weathor {
           display: none !important;
         }
 
@@ -143,6 +186,7 @@
               font-size: 1.125rem;
               font-weight: 600;
               color: $text_primary_dark;
+              min-width: fit-content;
             }
 
             .links {

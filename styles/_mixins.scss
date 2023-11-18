@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
 @mixin usebasefont() {
@@ -7,6 +8,10 @@
 
 @mixin useintronamefont() {
   font-family: "Sacramento", cursive;
+}
+
+@mixin usefontraleway() {
+  font-family: "Raleway", sans-serif;
 }
 
 @mixin flexmixin($direction, $wrap, $align, $justify) {
