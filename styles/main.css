@@ -234,7 +234,7 @@
 #info #right #projects .projects #autoplay,
 #info #right #projects .projects #oasisstays,
 #info #right #projects .projects #potterapp,
-#info #right #projects .projects #weathor {
+#info #right #projects .projects #audioplayer {
   display: none !important;
 }
 #info #right #projects .projects div {
@@ -309,4 +309,4 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

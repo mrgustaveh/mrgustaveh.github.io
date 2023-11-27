@@ -1,5 +1,5 @@
 const oasisbtn = document.querySelector(".oasisbtn");
-const weathorbtn = document.querySelector(".weathorbtn");
+const audioplayerbtn = document.querySelector(".audioplayerbtn");
 const autoplaybtn = document.querySelector(".autoplaybtn");
 const potterapbtn = document.querySelector(".potterapbtn");
 const veestrmdesignbtn = document.querySelector(".veestrmdesignbtn");
@@ -23,7 +23,7 @@ const showcurrentprojt = (showid, hiddenids) => {
 
 oasisbtn.addEventListener("click", () => {
   showcurrentprojt("oasisstays", [
-    "weathor",
+    "audioplayer",
     "autoplay",
     "potterapp",
     "oasisstaysdesign",
@@ -32,8 +32,8 @@ oasisbtn.addEventListener("click", () => {
   ]);
 });
 
-weathorbtn.addEventListener("click", () => {
-  showcurrentprojt("weathor", [
+audioplayerbtn.addEventListener("click", () => {
+  showcurrentprojt("audioplayer", [
     "oasisstays",
     "autoplay",
     "potterapp",
@@ -46,7 +46,7 @@ weathorbtn.addEventListener("click", () => {
 autoplaybtn.addEventListener("click", () => {
   showcurrentprojt("autoplay", [
     "oasisstays",
-    "weathor",
+    "audioplayer",
     "potterapp",
     "oasisstaysdesign",
     "oasisstaysdesign",
@@ -57,7 +57,7 @@ autoplaybtn.addEventListener("click", () => {
 potterapbtn.addEventListener("click", () => {
   showcurrentprojt("potterapp", [
     "oasisstays",
-    "weathor",
+    "audioplayer",
     "autoplay",
     "oasisstaysdesign",
     "oasisstaysdesign",
@@ -82,7 +82,7 @@ const showdesignprojects = () => {
 
   showcurrentprojt("veestream", [
     "oasisstays",
-    "weathor",
+    "audioplayer",
     "autoplay",
     "potterapp",
     "oasisstaysdesign",
@@ -106,7 +106,7 @@ const showdevelopmentprojectcs = () => {
   });
 
   showcurrentprojt("autoplay", [
-    "weathor",
+    "audioplayer",
     "oasisstays",
     "potterapp",
     "autoplaydesign",
