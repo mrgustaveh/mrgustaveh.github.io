@@ -25,6 +25,26 @@
     gap: 1rem;
     @include flexmixin(row, no-wrap, center, center);
 
+    #letstalk {
+      width: 10rem;
+      height: 2rem;
+      padding: 0.75rem;
+      border: 0;
+      border-radius: 0.375rem;
+      outline: none;
+      outline-color: transparent;
+      background-color: $goblin;
+      @include flexmixin(row, no-wrap, center, center);
+      gap: 0.5rem;
+      cursor: pointer;
+      @include usebasefont();
+
+      span {
+        font-weight: 600;
+        color: $text_primary_dark;
+      }
+    }
+
     .contactitem {
       width: 2rem;
       height: 2rem;

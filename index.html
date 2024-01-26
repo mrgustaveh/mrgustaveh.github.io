@@ -35,6 +35,15 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("sfaHF3cWO7UusyhQ4");
+      })();
+    </script>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body oncontextmenu="return false">
@@ -42,6 +51,16 @@
       <p class="name">Antoine</p>
 
       <div class="contact">
+        <button
+          id="letstalk"
+          href="https://github.com/mburuanthony"
+          target="_blank"
+          title="Let's Talk"
+        >
+          <span>Let's Talk</span>
+          <img src="./img/message.svg" />
+        </button>
+
         <a
           class="contactitem"
           href="https://github.com/mburuanthony"
@@ -434,6 +453,71 @@
       </div>
     </section>
 
+    <div id="emailctr">
+      <span class="notification">
+        <span class="notificationtext"
+          >Thank you for your message, I will get back to you shortly</span
+        >
+        <img class="notificationicon" src="./img/check.svg" />
+      </span>
+
+      <form id="emailcontactform">
+        <span class="form-title">
+          <p>Let's Talk about your project</p>
+        </span>
+
+        <input type="hidden" name="contact_number" />
+
+        <span class="inpuctr">
+          <label>Your name</label>
+          <input
+            required
+            type="text"
+            name="Your Name"
+            placeholder="Your name"
+          />
+        </span>
+
+        <span class="inpuctr">
+          <label>Your email address</label>
+          <input
+            required
+            type="email"
+            name="You Email..."
+            placeholder="Your email address"
+          />
+        </span>
+
+        <span class="inpuctr">
+          <label>Leave a message</label>
+          <textarea
+            required
+            name="message"
+            placeholder="Leave a message..."
+            id="messagectr"
+          ></textarea>
+        </span>
+
+        <div class="buttonctr">
+          <button id="cancel" type="button" title="Cancel">
+            <span>Cancel</span>
+            <img src="./img/cancel.svg" />
+          </button>
+          <div class="divider"></div>
+          <button
+            id="submit-email"
+            type="submit"
+            value="Send"
+            title="Let's have a conversation"
+          >
+            <span>Let's Talk</span>
+            <img src="./img/message.svg" />
+          </button>
+        </div>
+      </form>
+    </div>
+
     <script src="./js/index.js"></script>
+    <script src="./js/email.js"></script>
   </body>
 </html>
