@@ -5,6 +5,9 @@ const emailctr = document.querySelector("#emailctr");
 const emailContactForm = document.querySelector("#emailcontactform");
 const letstalk = document.querySelector("#letstalk");
 const cancelbtn = document.querySelector("#cancel");
+const emailformname = document.querySelector("#emailformname");
+const emailformemail = document.querySelector("#emailformemail");
+const emailformmessage = document.querySelector("#messagectr");
 
 letstalk.addEventListener("click", function (e) {
   emailctr.style.cssText =
@@ -13,24 +16,26 @@ letstalk.addEventListener("click", function (e) {
 
 emailContactForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  this.contact_number.value = (Math.random() * 100000) | 0;
-  emailjs
-    .sendForm("service_dtopizi", "template_gila894", this, "sfaHF3cWO7UusyhQ4")
-    .then(
-      function () {
-        notificationctr.style.cssText =
-          "display:flex !important; flex-direction:row; align-items:center; justify-content:space-between;";
-      },
-      function (error) {
-        notificationctr.style.cssText =
-          "display:flex !important; flex-direction:row; align-items:center; justify-content:space-between; background-color:#f45434;";
-        notificationtext.textContent =
-          "I was unable to receive your email, plaese try again";
-        notificationicon.setAttribute("src", "../img/cancel.svg");
 
-        console.log("FAILED...", error);
-      }
-    );
+  let templateParams = {
+    from_name: emailformname.value,
+    from_email: emailformemail.value,
+    message: emailformmessage.value,
+  };
+
+  emailjs.send("service_dtopizi", "template_gila894", templateParams).then(
+    function () {
+      notificationctr.style.cssText =
+        "display:flex !important; flex-direction:row; align-items:center; justify-content:space-between;";
+    },
+    function (error) {
+      notificationctr.style.cssText =
+        "display:flex !important; flex-direction:row; align-items:center; justify-content:space-between; background-color:#f45434;";
+      notificationtext.textContent =
+        "I was unable to receive your email, plaese try again";
+      notificationicon.setAttribute("src", "../img/cancel.svg");
+    }
+  );
 });
 
 cancelbtn.addEventListener("click", function (e) {
