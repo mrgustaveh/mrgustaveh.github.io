@@ -15,12 +15,20 @@
   @include flexmixin(row, no-wrap, center, space-between);
 
   .name {
+    @include phone-only {
+      font-size: 2rem;
+    }
+
     margin-left: 0.5rem;
     font-size: 2.5rem;
     @include useintronamefont();
   }
 
   .contact {
+    @include phone-only {
+      gap: 0.5rem;
+    }
+
     margin-right: 0.5rem;
     gap: 1rem;
     @include flexmixin(row, no-wrap, center, center);
