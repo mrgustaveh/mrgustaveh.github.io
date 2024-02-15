@@ -124,8 +124,8 @@
     width: 100vw;
     min-height: -moz-fit-content;
     min-height: fit-content;
+    margin-top: 5.75rem;
     position: static;
-    margin-top: 2rem;
     border: 0;
   }
 }
@@ -136,8 +136,8 @@
 }
 @media (max-width: 599px) {
   #info #left #about {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 #info #left #about h2 {
@@ -258,12 +258,13 @@
 }
 @media (max-width: 599px) {
   #info #right #projects .indicator {
+    padding-left: 1rem;
+    padding-right: 1rem;
     flex-wrap: wrap;
   }
 }
 @media (max-width: 599px) {
   #info #right #projects .indicator .projects-title {
-    padding-left: 0.5rem;
     margin-bottom: 1rem;
   }
 }
@@ -329,7 +330,7 @@
 @media (max-width: 599px) {
   #info #right #projects .indicator .btns .cat_design,
   #info #right #projects .indicator .btns .cat_develop {
-    width: 47%;
+    width: 47.5%;
     padding: 0.35rem;
     border-radius: 0.375rem;
   }
@@ -347,11 +348,6 @@
 }
 #info #right #projects .projects-title {
   color: rgba(248, 250, 252, 0.78);
-}
-@media (max-width: 599px) {
-  #info #right #projects .projects-title {
-    padding-left: 1rem;
-  }
 }
 #info #right #projects .projects {
   margin-top: 1rem;
@@ -398,8 +394,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 #info #right #projects .projects div .title-links .title {
@@ -455,8 +451,8 @@
 }
 @media (max-width: 599px) {
   #info #right #projects .projects div .description p {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media (max-width: 599px) {
