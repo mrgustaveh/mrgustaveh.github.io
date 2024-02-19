@@ -29,7 +29,7 @@ emailContactForm.addEventListener("submit", function (event) {
         "display:flex !important; flex-direction:row; align-items:center; justify-content:space-between;";
 
       setTimeout(() => {
-        emailContactForm.style.cssText = "display:none !important";
+        emailctr.style.cssText = "display:none !important";
       }, 2500);
     },
     function (error) {
