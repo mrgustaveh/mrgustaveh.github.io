@@ -1,19 +1,51 @@
-const oasisbtn = document.querySelector(".oasisbtn");
-const audioplayerbtn = document.querySelector(".audioplayerbtn");
-const autoplaybtn = document.querySelector(".autoplaybtn");
-const potterapbtn = document.querySelector(".potterapbtn");
-const veestrmdesignbtn = document.querySelector(".veestrmdesignbtn");
-const autoplaydesignbtn = document.querySelector(".autoplaydesignbtn");
-const oasisdesignbtn = document.querySelector(".oasisdesignbtn");
-
-const cat_designbtn = document.querySelector(".cat_design");
-const cat_developbtn = document.querySelector(".cat_develop");
-
-const yeartext = document.querySelector(".yeartext");
+const aboutBtn = document.querySelector("#about-bnt");
+const medicBtn = document.querySelector("#medic-btn");
+const nobisBtn = document.querySelector("#nobis-btn");
+const echoBtn = document.querySelector("#echo-btn");
+const bikkeBtn = document.querySelector("#bikke-btn");
+const autoPlayBtn = document.querySelector("#autoplay-btn");
+const audioPlayerBtn = document.querySelector("#audioplayer-btn");
 
 const showcurrentprojt = (showid, hiddenids) => {
-  document.querySelector(`#${showid}`).style.cssText =
-    "display:block !important;";
+  if (showid == "about") aboutBtn.classList.add("activebutton");
+  else {
+    aboutBtn.classList.remove("activebutton");
+  }
+
+  if (showid == "project-medic") medicBtn.classList.add("activebutton");
+  else {
+    medicBtn.classList.remove("activebutton");
+  }
+
+  if (showid == "project-nobis") nobisBtn.classList.add("activebutton");
+  else {
+    nobisBtn.classList.remove("activebutton");
+  }
+
+  if (showid == "project-echo") echoBtn.classList.add("activebutton");
+  else {
+    echoBtn.classList.remove("activebutton");
+  }
+
+  if (showid == "project-bikke") bikkeBtn.classList.add("activebutton");
+  else {
+    bikkeBtn.classList.remove("activebutton");
+  }
+
+  if (showid == "project-autoplay") autoPlayBtn.classList.add("activebutton");
+  else {
+    autoPlayBtn.classList.remove("activebutton");
+  }
+
+  if (showid == "project-audioplayer")
+    audioPlayerBtn.classList.add("activebutton");
+  else {
+    audioPlayerBtn.classList.remove("activebutton");
+  }
+
+  document.querySelector(`#${showid}`).style.cssText = `display:${
+    showid == "about" ? "content" : "unset"
+  } !important;`;
 
   hiddenids.map((projid) => {
     document.querySelector(`#${projid}`).style.cssText =
@@ -21,114 +53,79 @@ const showcurrentprojt = (showid, hiddenids) => {
   });
 };
 
-oasisbtn.addEventListener("click", () => {
-  showcurrentprojt("oasisstays", [
-    "audioplayer",
-    "autoplay",
-    "potterapp",
-    "oasisstaysdesign",
-    "oasisstaysdesign",
-    "veestream",
+aboutBtn.addEventListener("click", () => {
+  showcurrentprojt("about", [
+    "project-medic",
+    "project-nobis",
+    "project-echo",
+    "project-bikke",
+    "project-autoplay",
+    "project-audioplayer",
   ]);
 });
 
-audioplayerbtn.addEventListener("click", () => {
-  showcurrentprojt("audioplayer", [
-    "oasisstays",
-    "autoplay",
-    "potterapp",
-    "oasisstaysdesign",
-    "oasisstaysdesign",
-    "veestream",
+medicBtn.addEventListener("click", () => {
+  showcurrentprojt("project-medic", [
+    "about",
+    "project-nobis",
+    "project-echo",
+    "project-bikke",
+    "project-autoplay",
+    "project-audioplayer",
   ]);
 });
 
-autoplaybtn.addEventListener("click", () => {
-  showcurrentprojt("autoplay", [
-    "oasisstays",
-    "audioplayer",
-    "potterapp",
-    "oasisstaysdesign",
-    "oasisstaysdesign",
-    "veestream",
+nobisBtn.addEventListener("click", () => {
+  showcurrentprojt("project-nobis", [
+    "about",
+    "project-medic",
+    "project-echo",
+    "project-bikke",
+    "project-autoplay",
+    "project-audioplayer",
   ]);
 });
 
-potterapbtn.addEventListener("click", () => {
-  showcurrentprojt("potterapp", [
-    "oasisstays",
-    "audioplayer",
-    "autoplay",
-    "oasisstaysdesign",
-    "oasisstaysdesign",
-    "veestream",
+echoBtn.addEventListener("click", () => {
+  showcurrentprojt("project-echo", [
+    "about",
+    "project-medic",
+    "project-nobis",
+    "project-bikke",
+    "project-autoplay",
+    "project-audioplayer",
   ]);
 });
 
-const showdesignprojects = () => {
-  cat_designbtn.style.cssText = "background-color:#323232";
-  cat_developbtn.style.cssText = "background-color: rgba(38, 38, 38, 0.75)";
-
-  const designprojectsbtn = document.querySelectorAll(".proj_designbtn");
-  const devprojectsbtn = document.querySelectorAll(".proj_developmntbnt");
-
-  devprojectsbtn.forEach((bnt) => {
-    bnt.style.cssText = "display:none !important";
-  });
-
-  designprojectsbtn.forEach((btn) => {
-    btn.style.cssText = "display:flex !important";
-  });
-
-  showcurrentprojt("veestream", [
-    "oasisstays",
-    "audioplayer",
-    "autoplay",
-    "potterapp",
-    "oasisstaysdesign",
-    "autoplaydesign",
+bikkeBtn.addEventListener("click", () => {
+  showcurrentprojt("project-bikke", [
+    "about",
+    "project-medic",
+    "project-nobis",
+    "project-echo",
+    "project-autoplay",
+    "project-audioplayer",
   ]);
-};
+});
 
-const showdevelopmentprojectcs = () => {
-  cat_developbtn.style.cssText = "background-color:#323232";
-  cat_designbtn.style.cssText = "background-color: rgba(38, 38, 38, 0.75)";
-
-  const devprojectsbtn = document.querySelectorAll(".proj_developmntbnt");
-  const designprojectsbtn = document.querySelectorAll(".proj_designbtn");
-
-  designprojectsbtn.forEach((btn) => {
-    btn.style.cssText = "display:none !important";
-  });
-
-  devprojectsbtn.forEach((btn) => {
-    btn.style.cssText = "display:flex !important";
-  });
-
-  showcurrentprojt("autoplay", [
-    "audioplayer",
-    "oasisstays",
-    "potterapp",
-    "autoplaydesign",
-    "oasisstaysdesign",
-    "veestream",
+autoPlayBtn.addEventListener("click", () => {
+  showcurrentprojt("project-autoplay", [
+    "about",
+    "project-medic",
+    "project-nobis",
+    "project-bikke",
+    "project-echo",
+    "project-audioplayer",
   ]);
-};
-
-cat_designbtn.addEventListener("click", () => showdesignprojects());
-cat_developbtn.addEventListener("click", () => showdevelopmentprojectcs());
-
-autoplaydesignbtn.addEventListener("click", () => {
-  showcurrentprojt("autoplaydesign", ["oasisstaysdesign", "veestream"]);
-});
-oasisdesignbtn.addEventListener("click", () => {
-  showcurrentprojt("oasisstaysdesign", ["autoplaydesign", "veestream"]);
-});
-veestrmdesignbtn.addEventListener("click", () => {
-  showcurrentprojt("veestream", ["autoplaydesign", "oasisstaysdesign"]);
 });
 
-showdevelopmentprojectcs();
-
-const date = new Date();
-yeartext.textContent = date.getFullYear();
+audioPlayerBtn.addEventListener("click", () => {
+  showcurrentprojt("project-audioplayer", [
+    "about",
+    "project-medic",
+    "project-nobis",
+    "project-bikke",
+    "project-autoplay",
+    "project-echo",
+  ]);
+});

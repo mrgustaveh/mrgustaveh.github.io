@@ -3,7 +3,7 @@ const notificationtext = document.querySelector(".notificationtext");
 const notificationicon = document.querySelector(".notificationicon");
 const emailctr = document.querySelector("#emailctr");
 const emailContactForm = document.querySelector("#emailcontactform");
-const letstalk = document.querySelector("#letstalk");
+const letstalk = document.querySelector("#cta-btn");
 const cancelbtn = document.querySelector("#cancel");
 const emailformname = document.querySelector("#emailformname");
 const emailformemail = document.querySelector("#emailformemail");
@@ -37,7 +37,7 @@ emailContactForm.addEventListener("submit", function (event) {
         "display:flex !important; flex-direction:row; align-items:center; justify-content:space-between; background-color:#f45434;";
       notificationtext.textContent =
         "I was unable to receive your email, plaese try again";
-      notificationicon.setAttribute("src", "../img/cancel.svg");
+      notificationicon.setAttribute("src", "../img/icons/cancel.svg");
     }
   );
 });
