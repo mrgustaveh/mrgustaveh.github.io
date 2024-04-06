@@ -46,411 +46,420 @@
     </script>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  
-  <body oncontextmenu="return false">
-    <div class="intro-contact">
-      <p class="name">Antoine</p>
 
-      <div class="contact">
-        <button
-          id="letstalk"
-          href="https://github.com/mburuanthony"
-          target="_blank"
-          title="Let's Talk"
-        >
-          <span>Let's Talk</span>
-          <img src="./img/message.svg" />
+  <body oncontextmenu="return false">
+    <section id="navigationbar">
+      <div class="project-btns-ctr">
+        <span class="about-divider">
+          <button id="about-bnt" title="About">
+            <img src="./img/icons/about.svg" alt="about icon" />
+          </button>
+        </span>
+
+        <button id="medic-btn" class="project-btn" title="Medic | Project">
+          <img src="./img/icons/medic.svg" alt="medic icon" />
         </button>
 
-        <a
-          class="contactitem"
-          href="https://github.com/mburuanthony"
-          target="_blank"
-          title="GitHub"
+        <button id="nobis-btn" class="project-btn" title="Nobis | Project">
+          <img src="./img/icons/nobis.svg" alt="medic icon" />
+        </button>
+
+        <button id="echo-btn" class="project-btn" title="Echo | Project">
+          <img src="./img/icons/echo.svg" alt="echo icon" />
+        </button>
+
+        <button id="bikke-btn" class="project-btn" title="Bikke | Project">
+          <img src="./img/icons/bikke.svg" alt="bikke icon" />
+        </button>
+
+        <button
+          id="autoplay-btn"
+          class="project-btn"
+          title="AutoPlay | Project"
         >
-          <img src="./img/github.svg" />
-        </a>
+          <img src="./img/icons/autoplay.svg" alt="autoplay icon" />
+        </button>
 
-        <a
-          class="contactitem"
-          href="mailto:developer.aj12@gmail.com"
-          title="Email"
+        <button
+          id="audioplayer-btn"
+          class="project-btn"
+          title="AudioPlayer | Project"
         >
-          <img src="./img/email.svg" />
-        </a>
-      </div>
-    </div>
-
-    <section id="info">
-      <div id="left">
-        <div id="about">
-          <h2 class="title">About me</h2>
-          <p class="pr-0">
-            Hi there, thank you for checking out my portfolio. I am
-            <b>Antony</b>, a Software Developer and UI/UX Designer with a
-            dynamic skill set encompassing both creative design and hands-on
-            development.
-          </p>
-          <p class="pr-01">
-            With a robust skill set encompassing full-stack development, along
-            with a proficiency in cross-platform mobile app development, I bring
-            a solid foundation in Python, JavaScript, Typescript and Rust. My
-            expertise extends to utilizing cutting-edge technologies such as
-            ReactJS, Next.js, React Native, Django, and the Django Rest
-            Framework. I am Well-versed in collaboration tools and enthusiastic
-            about collaborating with forward-thinking teams that share my
-            dedication to innovation and problem-solving.
-          </p>
-        </div>
-
-        <div id="services">
-          <div>
-            <span class="material-icons-outlined"> desktop_windows </span>
-            <p>
-              Web Design & Development <br />
-              <span>Figma, React, Next Js, Netlify, Vercel</span>
-            </p>
-          </div>
-          <div class="srv">
-            <span class="material-icons-outlined"> smartphone </span>
-            <p>
-              Mobile App Design & Development <br />
-              <span>Figma, React Native, Expo</span>
-            </p>
-          </div>
-          <div>
-            <span class="material-icons-outlined"> code </span>
-            <p>
-              Software Development <br />
-              <span>Python, JavaScript, Typescript, Rust</span>
-            </p>
-          </div>
-        </div>
-
-        <p class="copyright">
-          &copy; <a href="https://github.com/mburuanthony">mburuanthony</a>
-          <span class="yeartext"></span>
-        </p>
+          <img src="./img/icons/audioplayer.svg" alt="audioplayer icon" />
+        </button>
       </div>
 
-      <div id="right">
-        <div id="projects">
-          <div class="indicator">
-            <h2 class="title projects-title">Featured Projects</h2>
+      <span class="cta-divider">
+        <button id="cta-btn" title="Let's Talk">
+          <img src="./img/icons/cta.svg" alt="cta icon" />
+        </button>
+      </span>
+    </section>
 
-            <div class="btns">
-              <button class="cat_design" title="Featured Design Projects">
-                <span class="cat_title">design</span>
-                <span class="material-icons-outlined">architecture</span>
-              </button>
+    <section id="contentbody">
+      <div id="about">
+        <div class="aboutctr">
+          <p class="sectiontitle">About Me</p>
 
-              <button class="cat_develop" title="Featured Development Projects">
-                <span class="cat_title">development</span>
-                <span class="material-icons-outlined"> code </span>
-              </button>
+          <p class="intro">
+            I am a problem solver, but for now let's just go with programmer
+            <span>(proʊgræməʳ)</span> and ui ux designer
+            <span>(dɪzaɪnəʳ)</span>...Let's say, I bring programs and design
+            concepts to life.
+          </p>
 
-              <div class="vertical_divider"></div>
+          <p class="srvce">
+            <span>On the web:</span> I leverage the power of React and Next.js
+            to develop user-friendly, interactive websites. My experience with
+            these frameworks allows me to build performant and scalable web
+            experiences.
+          </p>
 
-              <button class="veestrmdesignbtn proj_designbtn" title="veestream">
-                <img src="./img/veestream.svg" alt="oasis stays" />
-              </button>
+          <p class="srvce">
+            <span>For mobile:</span> I bring applications to life using React
+            Native and Expo. This combination enables me to create
+            native-looking mobile apps with a streamlined development process.
+          </p>
 
-              <button class="autoplaydesignbtn proj_designbtn" title="autoplay">
-                <span class="material-icons-outlined"> music_note </span>
-              </button>
+          <p class="srvce">
+            <span>GCP:</span> I leverage Kubernetes Engine, a managed Kubernetes
+            service. My expertise in GKE ensures applications are orchestrated
+            and scaled effectively across containerized deployments as well as
+            seamlessly deploying containerized applications using Cloud Run, a
+            serverless platform that eliminates server management headaches.
+          </p>
 
-              <button class="oasisdesignbtn proj_designbtn" title="oasis">
-                <img src="./img/oasis.svg" alt="oasis stays" />
-              </button>
+          <p class="srvce">
+            <span>Google Maps API:</span> I leverage the power of the Google
+            Maps API to create interactive and informative web applications.
+          </p>
 
-              <button class="autoplaybtn proj_developmntbnt" title="autoplay">
-                <span class="material-icons-outlined"> music_note </span>
-              </button>
+          <p class="srvce">
+            <span>Rust:</span> Rust is a powerful and memory safe language that
+            is suitable for resource-constrained devices and I leverage its
+            power in the embedded field.
+          </p>
+        </div>
 
-              <button class="oasisbtn proj_developmntbnt" title="oasis">
-                <img src="./img/oasis.svg" alt="oasis stays" />
-              </button>
+        <div class="skilllinks">
+          <div class="skills">
+            <p class="sectiontitle">My Skills & Expertise</p>
 
-              <button
-                class="audioplayerbtn proj_developmntbnt"
-                title="audioplayer"
-              >
-                <span class="material-icons-outlined"> music_note </span>
-              </button>
+            <div class="div-skill">
+              <p class="skill-title">
+                <img src="./img/icons/design.svg" alt="design" /> UI/UX Design
+              </p>
+              <p>Figma, Responsive Web Design, Mobile App Design</p>
+            </div>
 
-              <button
-                class="potterapbtn proj_developmntbnt"
-                title="harry potter app"
-              >
-                <img src="./img/potter.svg" alt="harry potter app" />
-              </button>
+            <div class="div-skill">
+              <p class="skill-title">
+                <img src="./img/icons/web.svg" alt="full stack" /> Full Stack
+                Web Development
+              </p>
+              <p>React, NextJs, Django, DjangoRestFramework</p>
+            </div>
+
+            <div class="div-skill">
+              <p class="skill-title">
+                <img src="./img/icons/mobile.svg" alt="mobile" /> Mobile App
+                Development
+              </p>
+              <p>React, React Native, Expo</p>
+            </div>
+
+            <div class="div-skill">
+              <p class="skill-title">
+                <img src="./img/icons/web.svg" alt="mobile" /> Deployment
+              </p>
+              <p>GCP - Cloud Run, Kubernetes Engine, Netlify, Vercel</p>
+            </div>
+
+            <div class="div-skill">
+              <p class="skill-title">
+                <img src="./img/icons/code.svg" alt="code" /> Programming
+                Languages
+              </p>
+              <p>Rust, Python, JavaScript, Typescript</p>
             </div>
           </div>
 
-          <div class="projects">
-            <div id="veestream">
-              <div class="title-links">
-                <p class="title">Veestream</p>
-              </div>
+          <div class="links">
+            <a href="https://github.com/mburuanthony" target="_blank"
+              ><img src="./img/icons/github.svg" alt="github"
+            /></a>
+            <a href="https://dribbble.com/art3mes" target="_blank"
+              ><img src="./img/icons/dribble.svg" alt="dribble"
+            /></a>
+            <a href="mailto:developer.aj12@gmail.com"
+              ><img src="./img/icons/email.svg" alt="email"
+            /></a>
+          </div>
+        </div>
+      </div>
 
-              <div class="description">
-                <p class="app_description">
-                  Veestream is an upcoming app that seamlessly merges the worlds
-                  of audio and visual artistry. Veestream revolutionizes your
-                  multimedia experience by transforming your favorite audio
-                  files and images into custom-designed vinyl-like records.
-                </p>
+      <div id="project-medic" class="project">
+        <div class="bgimage"></div>
 
-                <iframe
-                  style="
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-                    border-radius: 0.5rem;
-                  "
-                  width="100%"
-                  height="500"
-                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fj7cae9uZYpwtjdRDDiyiwG%2Fvinyl-player%3Ftype%3Ddesign%26node-id%3D6-2%26t%3DfReCHGZ0pNx4Fy8R-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D6%253A2%26mode%3Ddesign"
-                  allowfullscreen
-                ></iframe>
-              </div>
+        <div class="desc-links">
+          <div class="desc">
+            <p class="projecttitle">Medic</p>
+            <p class="description">
+              Tired of long waits and endless phone calls? Introducing Medic
+              (fictitious), the all-in-one app that makes booking doctor
+              appointments a breeze. With Medic, you can, find the perfect
+              doctor, make appointments instantly and reduce wait times.
+            </p>
+          </div>
+
+          <div class="cat-links">
+            <div class="category">
+              <span class="cat"
+                ><img src="./img/icons/design.svg" alt="design" /> Design</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/mobile.svg" alt="mobile" /> Mobile</span
+              >
             </div>
 
-            <div id="autoplaydesign">
-              <div class="title-links">
-                <p class="title">AutoPlay | Design</p>
-                <div class="links">
-                  <a
-                    class="link app app_title_hidden"
-                    id="imageuploader"
-                    target="_blank"
-                    href="https://auto-play.vercel.app/"
-                    ><span class="material-icons">public</span> auto-play</a
-                  >
-
-                  <a
-                    class="link source app_title_hidden"
-                    href="https://github.com/mburuanthony/auto.play"
-                    target="_blank"
-                  >
-                    <span class="material-icons-outlined"> lock </span>
-                    source code</a
-                  >
-                </div>
-              </div>
-
-              <div class="description">
-                <p class="app_description">
-                  Auto-play is a minimal web audio player built with Next Js
-                  combining Typescript, JavaScript and SCSS. It provides basic
-                  audio controls (rewind, fast-forward, next previous, loop &
-                  mute). As well as lyrics for the associated audio. Alerts and
-                  a means to follow current playback, within settings (
-                  <span class="material-icons-outlined"> settings </span> ).
-                </p>
-
-                <iframe
-                  style="
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-                    border-radius: 0.5rem;
-                  "
-                  width="100%"
-                  height="500"
-                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FaFFaXmdkfYltsLj47tvcTG%2Fautoplay%3Ftype%3Ddesign%26node-id%3D3-5%26t%3DQrMX2l1JaAyQ9gEc-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D3%253A5%26mode%3Ddesign"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
-            </div>
-
-            <div id="oasisstaysdesign">
-              <div class="title-links">
-                <p class="title">Oasis | Design</p>
-                <div class="links">
-                  <a
-                    class="link app app_title_hidden"
-                    id="imageuploader"
-                    target="_blank"
-                    href="https://oasis-nine-sand.vercel.app/"
-                    ><span class="material-icons">public</span> oasis-stays</a
-                  >
-
-                  <a
-                    class="link source app_title_hidden"
-                    href="https://github.com/mburuanthony/oasis"
-                    target="_blank"
-                  >
-                    <span class="material-icons-outlined"> lock </span>
-                    source code</a
-                  >
-                </div>
-              </div>
-
-              <div class="description">
-                <p class="app_description">
-                  An exciting web design & development project for Oasis stays,
-                  a dynamic and customer-focused rental home business. The
-                  primary goal of this project was to create a user-friendly and
-                  visually appealing website that enhances the online presence
-                  of the business.
-                </p>
-                <iframe
-                  style="
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-                    border-radius: 0.5rem;
-                  "
-                  width="100%"
-                  height="500"
-                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvhyzmodLyYKqqLg2w4iYaV%2Foasis%3Ftype%3Ddesign%26node-id%3D3-9%26t%3Df7f2s7rKvLGrGYFX-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D3%253A9%26mode%3Ddesign"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-
-            <div id="autoplay">
-              <div class="title-links">
-                <p class="title">AutoPlay</p>
-                <div class="links">
-                  <a
-                    class="link app app_title_hidden"
-                    id="imageuploader"
-                    target="_blank"
-                    href="https://auto-play.vercel.app/"
-                    ><span class="material-icons">public</span> auto-play</a
-                  >
-
-                  <a
-                    class="link source app_title_hidden"
-                    href="https://github.com/mburuanthony/auto.play"
-                    target="_blank"
-                  >
-                    <span class="material-icons-outlined"> lock </span>
-                    source code</a
-                  >
-                </div>
-              </div>
-
-              <div class="description">
-                <p class="app_description">
-                  Auto-play is a minimal web audio player built with Next Js
-                  combining Typescript, JavaScript and SCSS. It provides basic
-                  audio controls (rewind, fast-forward, next previous, loop &
-                  mute). As well as lyrics for the associated audio. Alerts and
-                  a means to follow current playback, within settings (
-                  <span class="material-icons-outlined"> settings </span> ).
-                </p>
-
-                <img
-                  class="project-img img_hidden"
-                  src="./img/auto-play.png"
-                  loading="lazy"
-                  alt="autoplay project"
-                />
-              </div>
-            </div>
-
-            <div id="oasisstays">
-              <div class="title-links">
-                <p class="title">Oasis</p>
-                <div class="links">
-                  <a
-                    class="link app app_title_hidden"
-                    id="imageuploader"
-                    target="_blank"
-                    href="https://oasis-nine-sand.vercel.app/"
-                    ><span class="material-icons">public</span> oasis-stays</a
-                  >
-
-                  <a
-                    class="link source app_title_hidden"
-                    href="https://github.com/mburuanthony/oasis"
-                    target="_blank"
-                  >
-                    <span class="material-icons-outlined"> lock </span>
-                    source code</a
-                  >
-                </div>
-              </div>
-
-              <div class="description">
-                <p class="app_description">
-                  An exciting web design & development project for Oasis stays,
-                  a dynamic and customer-focused rental home business. The
-                  primary goal of this project was to create a user-friendly and
-                  visually appealing website that enhances the online presence
-                  of the business.
-                </p>
-                <img
-                  class="project-img img_hidden"
-                  src="./img/oasis.png"
-                  loading="lazy"
-                  alt="autoplay project"
-                />
-              </div>
-            </div>
-
-            <div id="audioplayer">
-              <div class="title-links">
-                <p class="title">AudioPlayer</p>
-                <div class="links">
-                  <a
-                    class="link source app_title_hidden"
-                    href="https://github.com/mburuanthony/audioplayer"
-                    target="_blank"
-                  >
-                    <span class="material-icons-outlined">lock</span> source
-                    code</a
-                  >
-                </div>
-              </div>
-
-              <div class="description">
-                <div class="text">
-                  <p class="app_description">
-                    A minimal audio player app that allows users to navigate
-                    effortlessly through their music collection, experience
-                    their music in stunning detail with support for a wide range
-                    of audio formats and keep the music playing while they use
-                    other apps.
-                  </p>
-                </div>
-                <img
-                  class="project-img img_hidden"
-                  src="./img/audioplayer.png"
-                  loading="lazy"
-                  alt="audioplayer project"
-                />
-              </div>
-            </div>
-
-            <div id="potterapp">
-              <div class="title-links">
-                <p class="title">Potter App</p>
-                <div class="links">
-                  <a
-                    href="https://github.com/mburuanthony/potterapp"
-                    target="_blank"
-                  >
-                    <span class="material-icons-outlined">source</span> source
-                    code</a
-                  >
-                </div>
-              </div>
-
-              <div class="description">
-                <p class="app_description">
-                  A minimal app for Harry Potter characters, view all
-                  characters, their detailed pages and search for specific
-                  characters.
-                </p>
-                <img
-                  class="project-img img_hidden"
-                  src="./img/harry-potter.png"
-                  loading="lazy"
-                  alt="harry potter app"
-                />
-              </div>
+            <div class="links">
+              <a
+                href="https://www.figma.com/file/8R4rHCCXE417A5wHPvzmPW/frosted?type=design&mode=design&t=g8H5D0TJySVjJTjq-1"
+                title="View Medic In Figma"
+                >View In Figma <img src="./img/icons/figma.svg" alt="figma"
+              /></a>
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="project-nobis" class="project">
+        <div class="bgimage"></div>
+
+        <div class="desc-links">
+          <div class="desc">
+            <p class="projecttitle">Nobis (AI)</p>
+            <p class="description">
+              Unlock the meaning within your documents. Nobis (fictitious) uses
+              advanced AI to analyze text and answer your questions directly
+              from the source. No more skimming pages - get straight to the
+              information you need with a QA-like experience. Nobis works like a
+              virtual assistant for your documents, saving you time and ensuring
+              you never miss a key detail.
+            </p>
+          </div>
+
+          <div class="cat-links">
+            <div class="category">
+              <span class="cat"
+                ><img src="./img/icons/design.svg" alt="design" /> Design</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/mobile.svg" alt="mobile" /> Mobile</span
+              >
+            </div>
+
+            <div class="links">
+              <a
+                href="https://www.figma.com/file/3MM6MHnU1gb88WjGUDmBER/nobis?type=design&mode=design&t=g8H5D0TJySVjJTjq-1"
+                title="View Nobis In Figma"
+                >View In Figma <img src="./img/icons/figma.svg" alt="figma"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-echo" class="project">
+        <div class="bgimage"></div>
+
+        <div class="desc-links">
+          <div class="desc">
+            <p class="projecttitle">Echo (AI - Text To Speech)</p>
+            <p class="description">
+              Tired of reading? Let Echo bring your text to life! This
+              innovative app uses cutting-edge AI to convert written content
+              into natural-sounding speech. Whether you're catching up on
+              articles, listening to e-books, or proofreading documents, Echo
+              reads it all aloud, freeing your eyes and allowing you to
+              multitask or relax.
+            </p>
+          </div>
+
+          <div class="cat-links">
+            <div class="category">
+              <span class="cat"
+                ><img src="./img/icons/design.svg" alt="design" /> Design</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/code.svg" alt="development" />
+                Development</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/mobile.svg" alt="mobile" /> Mobile</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/web.svg" alt="mobile" /> Deployment</span
+              >
+            </div>
+
+            <div class="links">
+              <a
+                href="https://www.figma.com/file/XieKXS7PlXtSu7AECQecYs/ech_o?type=design&mode=design&t=g8H5D0TJySVjJTjq-1"
+                title="View Echo In Figma"
+                >View In Figma <img src="./img/icons/figma.svg" alt="figma"
+              /></a>
+              <a
+                href="https://github.com/mburuanthony/echoapp"
+                title="View Echo In GitHub"
+                >View In GitHub <img src="./img/icons/github.svg" alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-bikke" class="project">
+        <div class="bgimage"></div>
+
+        <div class="desc-links">
+          <div class="desc">
+            <p class="projecttitle">Bikke</p>
+            <p class="description">
+              Bikke (fictitious) is your on-demand bike solution! Unlock a
+              network of quality bikes across the city with just a few taps on
+              your phone. Find a bike near you, reserve it instantly, and hit
+              the road in minutes. Whether it's a quick errand, a scenic ride,
+              or a healthy commute, Bikke makes cycling accessible and
+              convenient.
+            </p>
+          </div>
+
+          <div class="cat-links">
+            <div class="category">
+              <span class="cat"
+                ><img src="./img/icons/design.svg" alt="design" /> Design</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/mobile.svg" alt="mobile" /> Mobile</span
+              >
+            </div>
+
+            <div class="links">
+              <a
+                href="https://www.figma.com/file/arUNB4KSSmPHBrxDDk7xEP/bikke?type=design&mode=design&t=g8H5D0TJySVjJTjq-1"
+                title="View Bikke In Figma"
+                >View In Figma <img src="./img/icons/figma.svg" alt="figma"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-autoplay" class="project">
+        <div class="bgimage"></div>
+
+        <div class="desc-links">
+          <div class="desc">
+            <p class="projecttitle">AutoPlay</p>
+            <p class="description">
+              Unleash your soundtrack anywhere with AutoPlay, the free,
+              web-based audio player. Ditch bulky downloads and cluttered
+              software. Simply fire up your browser, upload your music library,
+              and hit play. Enjoy crystal-clear sound, seamless playback
+              controls, and access to your tunes from any device.
+            </p>
+          </div>
+
+          <div class="cat-links">
+            <div class="category">
+              <span class="cat"
+                ><img src="./img/icons/design.svg" alt="design" /> Design</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/code.svg" alt="development" />
+                Development</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/web.svg" alt="web" /> Web</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/web.svg" alt="deploymet" />
+                Deployment</span
+              >
+            </div>
+
+            <div class="links">
+              <a
+                href="https://www.figma.com/file/aFFaXmdkfYltsLj47tvcTG/autoplay?type=design&mode=design&t=g8H5D0TJySVjJTjq-1"
+                title="View AutoPlay In Figma"
+                >View In Figma <img src="./img/icons/figma.svg" alt="figma"
+              /></a>
+              <a
+                href="https://github.com/mburuanthony/auto.play"
+                title="View AutoPlay In GitHub"
+                >View In GitHub <img src="./img/icons/github.svg" alt="github"
+              /></a>
+              <a href="https://auto-play.vercel.app/" title="Launch AutoPlay"
+                >Launch Web App <img src="./img/icons/launch.svg" alt="launch"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-audioplayer" class="project">
+        <div class="bgimage"></div>
+
+        <div class="desc-links">
+          <div class="desc">
+            <p class="projecttitle">AudioPlayer</p>
+            <p class="description">
+              Tired of clunky music apps? Introducing “AudioPlayer”, the mobile
+              audio player that puts you in control. “AudioPlayer” boasts a
+              sleek, intuitive interface that lets you navigate your music
+              library with ease. Play any format and personalize your listening
+              experience with powerful audio settings. Whether you're a casual
+              listener or an audiophile, “AudioPlayer” elevates your mobile
+              music experience.
+            </p>
+          </div>
+
+          <div class="cat-links">
+            <div class="category">
+              <span class="cat"
+                ><img src="./img/icons/design.svg" alt="design" /> Design</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/code.svg" alt="development" />
+                Development</span
+              >
+              <span class="cat"
+                ><img src="./img/icons/mobile.svg" alt="mobile" /> Mobile</span
+              >
+            </div>
+
+            <div class="links">
+              <a
+                href="https://www.figma.com/file/lSvOEjDEIlUFU2rUVsxO4W/audioplayer?type=design&mode=design&t=g8H5D0TJySVjJTjq-1"
+                title="View AudioPlayer In Figma"
+                >View In Figma <img src="./img/icons/figma.svg" alt="figma"
+              /></a>
+              <a
+                href="https://github.com/mburuanthony/audioplayer"
+                title="View AudioPlayer In GitHub"
+                >View In GitHub <img src="./img/icons/github.svg" alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy">
+        &copy;
+        <a href="https://github.com/mburuanthony" target="_blank"
+          >mburuanthony</a
+        >
       </div>
     </section>
 
@@ -459,7 +468,7 @@
         <span class="notificationtext"
           >Thank you for your message, I will get back to you shortly</span
         >
-        <img class="notificationicon" src="./img/check.svg" />
+        <img class="notificationicon" src="./img/icons/check.svg" />
       </span>
 
       <form id="emailcontactform">
@@ -504,7 +513,7 @@
         <div class="buttonctr">
           <button id="cancel" type="button" title="Cancel">
             <span>Cancel</span>
-            <img src="./img/cancel.svg" />
+            <img src="./img/icons/cancel.svg" width="12%" />
           </button>
           <div class="divider"></div>
           <button
@@ -514,7 +523,7 @@
             title="Let's have a conversation"
           >
             <span>Let's Talk</span>
-            <img src="./img/message.svg" />
+            <img src="./img/icons/cta.svg" width="8%" />
           </button>
         </div>
       </form>
