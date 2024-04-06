@@ -1,0 +1,275 @@
+@import "./contants/colors";
+@import "./contants/mixins";
+
+#contentbody {
+  @include desktop {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    width: calc(100vw - 8rem);
+    height: calc(100vh - 4rem);
+  }
+
+  @include flexmixin(column, no-wrap, flex-start, space-between, 0);
+  min-height: 100vh;
+  width: 100vw;
+  margin-bottom: 4rem;
+  padding: 1rem;
+
+  #about {
+    @include big-desktop {
+      @include flexmixin(row, no-wrap, flex-start, space-between, 0.5rem);
+    }
+
+    .aboutctr {
+      @include big-desktop {
+        width: 65%;
+      }
+
+      @include usesimpleanimation(200ms, 100ms);
+
+      .sectiontitle {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      .intro {
+        span {
+          color: $goblin;
+        }
+      }
+
+      p {
+        font-size: 1.125rem;
+        margin-top: 1.25rem;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .skilllinks {
+      @include big-desktop {
+        width: calc(100% - 66%);
+      }
+
+      @include usesimpleanimation(300ms, 300ms);
+      width: 100%;
+      margin-top: 1rem;
+
+      .skills {
+        width: 100%;
+        padding-bottom: 0.5rem;
+        border: 1px solid $divider;
+        border-radius: 0.25rem;
+        background-color: rgba(188, 188, 188, 0.05);
+        backdrop-filter: blur(6px);
+
+        .sectiontitle {
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          padding: 0.5rem;
+          border: 0;
+          border-bottom: 1px solid $divider;
+          font-size: 1.125rem;
+          font-weight: 500;
+          text-align: center;
+          color: $text_primary;
+        }
+
+        .div-skill {
+          @include big-desktop {
+            margin-top: 1.5rem;
+          }
+
+          margin-top: 1rem;
+
+          p {
+            @include flexmixin(row, no-wrap, center, flex-start, 0.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            margin-top: 0.5rem;
+          }
+
+          .skill-title {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .links {
+        @include big-desktop {
+          margin-top: 1.5rem;
+        }
+
+        @include flexmixin(row, no-wrap, center, center, 2rem);
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+
+    display: none !important;
+  }
+
+  .project {
+    .bgimage {
+      @include usesimpleanimation(200ms, 100ms);
+      width: 100%;
+      height: 28rem;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 2px solid $divider;
+      border-radius: 0.25rem;
+    }
+
+    .desc-links {
+      @include big-desktop {
+        @include flexmixin(row, no-wrap, flex-start, space-between, 1rem);
+      }
+
+      margin-top: 1rem;
+
+      .desc {
+        @include usesimpleanimation(200ms, 200ms);
+
+        .projecttitle {
+          font-size: 1.125rem;
+          font-weight: 500;
+        }
+
+        .description {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .cat-links {
+        @include tablet-upwards {
+          @include flexmixin(row, no-wrap, flex-start, space-between, 0);
+        }
+
+        @include desktop {
+          margin-top: unset;
+        }
+
+        @include usesimpleanimation(200ms, 400ms);
+        width: 100%;
+        margin-top: 1rem;
+
+        .category {
+          @include tablet-upwards {
+            width: 50%;
+          }
+
+          @include flexmixin(column, no-wrap, flex-start, flex-start, 1rem);
+
+          .cat {
+            @include flexmixin(row, no-wrap, center, center, 0.5rem);
+            width: fit-content;
+            height: 2rem;
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            font-weight: 400;
+            background-color: $catbg;
+          }
+        }
+
+        .links {
+          @include tablet-upwards {
+            width: 50%;
+            margin-top: unset;
+          }
+
+          @include flexmixin(column, no-wrap, flex-end, flex-end, 1rem);
+          margin-top: 1rem;
+
+          a {
+            @include desktop {
+              transition: all ease-in-out 0.25s;
+
+              &:hover {
+                background-color: $divider;
+              }
+            }
+
+            @include flexmixin(row, no-wrap, center, center, 0.5rem);
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid $divider;
+            border-radius: 0.25rem;
+            background-color: $bg_primary;
+            color: $text_primary;
+            font-weight: 400;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  #project-medic {
+    display: none !important;
+
+    .bgimage {
+      background-image: url(../img/medic.png);
+    }
+  }
+
+  #project-nobis {
+    display: none !important;
+
+    .bgimage {
+      background-image: url(../img/nobis.png);
+    }
+  }
+
+  #project-echo {
+    display: none !important;
+
+    .bgimage {
+      background-image: url(../img/echo.png);
+    }
+  }
+
+  #project-bikke {
+    display: none !important;
+
+    .bgimage {
+      background-image: url(../img/bike.png);
+    }
+  }
+
+  #project-autoplay {
+    display: none !important;
+
+    .bgimage {
+      background-image: url(../img/autoplay.png);
+    }
+  }
+
+  #project-audioplayer {
+    display: none !important;
+
+    .bgimage {
+      background-image: url(../img/audioplayer.png);
+    }
+  }
+
+  .copy {
+    @include flexmixin(row, no-wrap, center, center, 0.5rem);
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border: 0;
+    border-top: 1px solid $divider;
+
+    a {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: $textv3primary;
+      text-decoration: none;
+    }
+  }
+}

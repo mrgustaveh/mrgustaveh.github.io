@@ -1,7 +1,7 @@
-@import "./colors";
-@import "./mixins";
-@import "./top";
-@import "./info";
+@import "./contants/colors";
+@import "./contants/mixins";
+@import "./navigationbar";
+@import "./content";
 @import "./contact";
 
 *,
@@ -20,8 +20,8 @@ html {
 
 body {
   background-color: $bg_primary;
-  color: $text_primary;
-  font-weight: 100;
+  color: $textv3primary;
+  font-weight: 300;
   @include usebasefont();
 }
 
