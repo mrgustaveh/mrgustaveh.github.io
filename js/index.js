@@ -44,7 +44,7 @@ const showcurrentprojt = (showid, hiddenids) => {
   }
 
   document.querySelector(`#${showid}`).style.cssText = `display:${
-    showid == "about" ? "content" : "unset"
+    showid == "about" ? "contents !important" : "unset"
   } !important;`;
 
   hiddenids.map((projid) => {

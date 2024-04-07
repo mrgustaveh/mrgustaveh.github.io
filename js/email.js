@@ -45,3 +45,7 @@ emailContactForm.addEventListener("submit", function (event) {
 cancelbtn.addEventListener("click", function (e) {
   emailctr.style.cssText = "display:none !important;";
 });
+
+window.addEventListener("keyup", (ev) => {
+  if (ev.key == "Escape") emailctr.style.cssText = "display:none !important;";
+});
