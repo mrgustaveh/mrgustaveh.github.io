@@ -149,7 +149,7 @@
           @include flexmixin(row, no-wrap, flex-start, space-between, 0);
         }
 
-        @include desktop {
+        @include big-desktop {
           margin-top: unset;
         }
 

@@ -69,17 +69,12 @@
   }
 }
 #navigationbar button img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   -o-object-position: center;
      object-position: center;
   width: 2rem;
   height: 2rem;
-}
-@media only screen and (min-width: 768px) {
-  #navigationbar button img {
-    width: 80%;
-  }
 }
 #navigationbar .project-btns-ctr {
   display: flex !important;
@@ -382,7 +377,7 @@
     gap: 0;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   #contentbody .project .desc-links .cat-links {
     margin-top: unset;
   }

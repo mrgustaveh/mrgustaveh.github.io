@@ -55,11 +55,7 @@
     cursor: pointer;
 
     img {
-      @include tablet-upwards {
-        width: 80%;
-      }
-
-      object-fit: contain;
+      object-fit: scale-down;
       object-position: center;
       width: 2rem;
       height: 2rem;
