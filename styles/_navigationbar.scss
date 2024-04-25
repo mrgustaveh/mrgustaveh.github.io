@@ -13,6 +13,8 @@
     top: 2rem;
     width: 6rem;
     height: calc(100vh - 4rem);
+    padding-left: unset;
+    padding-right: unset;
     border: 1px solid $divider;
     border-radius: 0.25rem;
     flex-direction: column;

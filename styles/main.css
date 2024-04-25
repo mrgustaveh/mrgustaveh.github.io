@@ -35,6 +35,8 @@
     top: 2rem;
     width: 6rem;
     height: calc(100vh - 4rem);
+    padding-left: unset;
+    padding-right: unset;
     border: 1px solid rgba(248, 250, 252, 0.1);
     border-radius: 0.25rem;
     flex-direction: column;
@@ -220,10 +222,13 @@
   animation-timing-function: ease-in;
   width: 100%;
   margin-top: 1rem;
+  border: 1px solid rgba(248, 250, 252, 0.1);
+  border-radius: 0.25rem;
 }
 @media only screen and (min-width: 1300px) {
   #contentbody #about .skilllinks {
     width: 34%;
+    min-height: 65vh;
   }
 }
 @keyframes simpleanimation {
@@ -239,16 +244,9 @@
 #contentbody #about .skilllinks .skills {
   width: 100%;
   padding-bottom: 0.5rem;
-  border: 1px solid rgba(248, 250, 252, 0.1);
-  border-radius: 0.25rem;
-  background-color: rgba(188, 188, 188, 0.05);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
 }
 #contentbody #about .skilllinks .skills .sectiontitle {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 0;
   border-bottom: 1px solid rgba(248, 250, 252, 0.1);
   font-size: 1.125rem;
@@ -284,9 +282,11 @@
   flex-wrap: no-wrap;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
-  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 1px solid rgba(248, 250, 252, 0.1);
+  border-radius: 0 0 0.25rem 0.25rem;
 }
 @media only screen and (min-width: 1300px) {
   #contentbody #about .skilllinks .links {
