@@ -1,0 +1,18 @@
+@mixin orangestripebackground() {
+  background: repeating-linear-gradient(
+      45deg,
+      orange,
+      orange 10px,
+      orangered 10px,
+      orangered 20px
+    )
+    orange;
+  background-blend-mode: overlay;
+}
+
+@mixin orangebackground() {
+  background-image: radial-gradient(circle, orange, transparent 20%, orangered);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: orange;
+}

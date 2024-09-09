@@ -1,0 +1,53 @@
+@import "./contants/colors";
+@import "./contants/mixins";
+
+#about {
+  @include flexmixin(column, no-wrap, flex-start, flex-start, 1rem);
+
+  .p0 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: $textprimary;
+  }
+
+  .p1 {
+    font-size: 1.375rem;
+  }
+
+  .p2 {
+    font-size: 1.375rem;
+
+    .bold {
+      font-weight: 400;
+    }
+  }
+
+  .p2,
+  .p3 {
+    .icon {
+      width: fit-content;
+      margin-left: 0.25rem;
+      border: 0.125rem solid $danger;
+      border-radius: 0.625rem;
+      padding: 0.25rem;
+      font-size: 1.5rem;
+      box-shadow: 4px 4px $danger;
+    }
+  }
+
+  .p3,
+  .p4 {
+    font-size: 1.375rem;
+    font-weight: 400;
+  }
+
+  .p4 {
+    margin-top: 1rem;
+  }
+}
+
+.p5 {
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}

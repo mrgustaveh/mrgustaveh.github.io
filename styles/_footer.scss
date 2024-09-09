@@ -1,0 +1,10 @@
+@import "./contants/colors";
+@import "./contants/mixins";
+
+#footer {
+  @include flexmixin(row, no-wrap, center, flex-start, 1rem);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border: 0;
+  border-top: 1px solid rgba($color: $secondary, $alpha: 0.125);
+}
