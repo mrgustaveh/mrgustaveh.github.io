@@ -91,6 +91,9 @@
 #works #nichlabs {
   background-image: url(../img/nichlabs.png);
 }
+#works #spot {
+  background-image: url(../img/pazuri-spot.png);
+}
 #works .project {
   height: 8.125rem;
   border-radius: 0.375rem;
