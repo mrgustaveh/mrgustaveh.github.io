@@ -1,9 +1,8 @@
 @import "./contants/colors";
 @import "./contants/mixins";
-@import "./about";
-@import "./works";
-@import "./tools";
-@import "./footer";
+@import "./navigationbar";
+@import "./content";
+@import "./contact";
 
 *,
 *::before,
@@ -20,18 +19,8 @@ html {
 }
 
 body {
-  @include tablet-upwards {
-    padding: 2rem;
-  }
-
-  @include desktop {
-    padding: 2.5rem 5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  padding: 1rem;
-  background-color: $primary;
-  color: $secondary;
+  background-color: $bg_primary;
+  color: $textv3primary;
   font-weight: 300;
   @include usebasefont();
 }

@@ -1,0 +1,116 @@
+@import "./contants/colors";
+@import "./contants/mixins";
+
+#navigationbar {
+  @include tablet-upwards {
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  @include desktop {
+    left: 2rem;
+    top: 2rem;
+    width: 6rem;
+    height: calc(100vh - 4rem);
+    padding-left: unset;
+    padding-right: unset;
+    border: 1px solid $divider;
+    border-radius: 0.25rem;
+    flex-direction: column;
+    background-color: $bgv3secondary;
+    overflow-y: scroll;
+  }
+
+  @include flexmixin(row, no-wrap, flex-start, flex-start, 1rem);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+  border-top: 1px solid $divider;
+  background-color: $bg_primary;
+  overflow-x: scroll;
+  z-index: 2000;
+
+  .activebutton {
+    background-color: $divider;
+  }
+
+  button {
+    @include desktop {
+      transition: all ease-in-out 0.25s;
+
+      &:hover {
+        background-color: $divider;
+      }
+    }
+
+    @include flexmixin(column, no-wrap, center, center, 0);
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.25rem;
+    outline: none;
+    outline-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+
+    img {
+      object-fit: scale-down;
+      object-position: center;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .project-btns-ctr {
+    @include desktop {
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+    }
+
+    @include flexmixin(row, no-wrap, center, flex-start, 3rem);
+  }
+
+  .about-divider,
+  .cta-divider {
+    width: fit-content;
+    padding-right: 1.5rem;
+    border: 0;
+    border-right: 1px solid $divider;
+  }
+
+  .about-divider {
+    @include desktop {
+      @include flexmixin(row, no-wrap, center, center, 0);
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid $divider;
+      margin: unset;
+      margin-top: 0.5rem;
+      padding: unset;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .cta-divider {
+    @include desktop {
+      @include flexmixin(row, no-wrap, center, center, 0);
+      width: 100%;
+      border: 0;
+      border-top: 1px solid $divider;
+      margin: unset;
+      margin-bottom: 0.5rem;
+      padding: unset;
+      padding-top: 0.5rem;
+    }
+
+    padding-left: 1.5rem;
+    padding-right: 0;
+    border-left: 1px solid $divider;
+    border-right: 0;
+    margin-right: 0.5rem;
+  }
+}
