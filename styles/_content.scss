@@ -23,7 +23,7 @@
     }
 
     .aboutctr {
-      @include big-desktop {
+      @include desktop {
         width: 65%;
       }
 
@@ -35,9 +35,7 @@
       }
 
       .intro {
-        span {
-          color: $goblin;
-        }
+        @include flexmixin(column, no-wrap, flex-start, flex-start, 0);
       }
 
       p {
@@ -51,14 +49,17 @@
     }
 
     .skilllinks {
-      @include big-desktop {
+      @include phone-only {
+        margin-top: 1rem;
+      }
+
+      @include desktop {
         width: calc(100% - 66%);
         min-height: 65vh;
       }
 
       @include usesimpleanimation(300ms, 300ms);
       width: 100%;
-      margin-top: 1rem;
       border: 1px solid $divider;
       border-radius: 0.25rem;
 
@@ -207,6 +208,14 @@
     }
   }
 
+  #project-trip {
+    display: none !important;
+
+    .bgimage {
+      background-image: url(../img/triptidy.png);
+    }
+  }
+
   #project-medic {
     display: none !important;
 
@@ -256,7 +265,7 @@
   }
 
   .copy {
-    @include flexmixin(row, no-wrap, center, center, 0.5rem);
+    @include flexmixin(row, no-wrap, center, center, 0.25rem);
     width: 100%;
     margin-top: 1rem;
     padding-top: 0.5rem;

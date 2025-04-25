@@ -2,16 +2,13 @@
 @import "./contants/mixins";
 
 #emailctr {
-  @include phone-only {
-  }
-
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   display: none !important;
-  background-color: rgba(188, 188, 188, 0.05);
+  background-color: rgba(14, 1, 1, 0.75);
   backdrop-filter: blur(5px);
   z-index: 2000;
 
@@ -88,7 +85,7 @@
         background-color: rgba($color: $bg_secondary, $alpha: 0.5);
         color: $textv3primary;
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 500;
 
         &::placeholder {
           color: rgba($color: $textv3primary, $alpha: 0.375);
@@ -106,7 +103,7 @@
       border-radius: 0.25rem;
       resize: none;
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 500;
       background-color: rgba($color: $bg_secondary, $alpha: 0.5);
       color: $textv3primary;
 
@@ -168,7 +165,7 @@
     min-height: 30rem;
     padding-top: 0.5rem;
     border: 1px solid rgba($color: $border_bg, $alpha: 0.12);
-    border-radius: 0.25rem;
+    border-radius: 0.375rem;
     background: rgba(255, 255, 255, 0.125);
     box-shadow: $boxShadow;
     color: $text_primary_dark;

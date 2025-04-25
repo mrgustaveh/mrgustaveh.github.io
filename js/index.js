@@ -1,4 +1,5 @@
 const aboutBtn = document.querySelector("#about-bnt");
+const triptidyBtn = document.querySelector("#triptidy-btn");
 const medicBtn = document.querySelector("#medic-btn");
 const nobisBtn = document.querySelector("#nobis-btn");
 const echoBtn = document.querySelector("#echo-btn");
@@ -10,6 +11,11 @@ const showcurrentprojt = (showid, hiddenids) => {
   if (showid == "about") aboutBtn.classList.add("activebutton");
   else {
     aboutBtn.classList.remove("activebutton");
+  }
+
+  if (showid == "project-trip") triptidyBtn.classList.add("activebutton");
+  else {
+    triptidyBtn.classList.remove("activebutton");
   }
 
   if (showid == "project-medic") medicBtn.classList.add("activebutton");
@@ -55,6 +61,19 @@ const showcurrentprojt = (showid, hiddenids) => {
 
 aboutBtn.addEventListener("click", () => {
   showcurrentprojt("about", [
+    "project-trip",
+    "project-medic",
+    "project-nobis",
+    "project-echo",
+    "project-bikke",
+    "project-autoplay",
+    "project-audioplayer",
+  ]);
+});
+
+triptidyBtn.addEventListener("click", () => {
+  showcurrentprojt("project-trip", [
+    "about",
     "project-medic",
     "project-nobis",
     "project-echo",
@@ -67,6 +86,7 @@ aboutBtn.addEventListener("click", () => {
 medicBtn.addEventListener("click", () => {
   showcurrentprojt("project-medic", [
     "about",
+    "project-trip",
     "project-nobis",
     "project-echo",
     "project-bikke",
@@ -78,6 +98,7 @@ medicBtn.addEventListener("click", () => {
 nobisBtn.addEventListener("click", () => {
   showcurrentprojt("project-nobis", [
     "about",
+    "project-trip",
     "project-medic",
     "project-echo",
     "project-bikke",
@@ -89,6 +110,7 @@ nobisBtn.addEventListener("click", () => {
 echoBtn.addEventListener("click", () => {
   showcurrentprojt("project-echo", [
     "about",
+    "project-trip",
     "project-medic",
     "project-nobis",
     "project-bikke",
@@ -100,6 +122,7 @@ echoBtn.addEventListener("click", () => {
 bikkeBtn.addEventListener("click", () => {
   showcurrentprojt("project-bikke", [
     "about",
+    "project-trip",
     "project-medic",
     "project-nobis",
     "project-echo",
@@ -111,6 +134,7 @@ bikkeBtn.addEventListener("click", () => {
 autoPlayBtn.addEventListener("click", () => {
   showcurrentprojt("project-autoplay", [
     "about",
+    "project-trip",
     "project-medic",
     "project-nobis",
     "project-bikke",
@@ -122,6 +146,7 @@ autoPlayBtn.addEventListener("click", () => {
 audioPlayerBtn.addEventListener("click", () => {
   showcurrentprojt("project-audioplayer", [
     "about",
+    "project-trip",
     "project-medic",
     "project-nobis",
     "project-bikke",
