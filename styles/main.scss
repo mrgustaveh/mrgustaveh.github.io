@@ -1,8 +1,7 @@
-@import "./contants/colors";
-@import "./contants/mixins";
-@import "./navigationbar";
-@import "./content";
-@import "./contact";
+@use "./contants/colors" as colors;
+@use "./contants/mixins" as mixins;
+@use "../styles/components/about";
+@use "../styles/components/project";
 
 *,
 *::before,
@@ -16,15 +15,153 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
-  background-color: $bg_primary;
-  color: $textv3primary;
+  @include mixins.usebasefont();
+  color: colors.$text_primary;
   font-weight: 300;
-  @include usebasefont();
+  background-color: colors.$bg_primary;
+}
+
+a {
+  outline: none;
+  outline-color: transparent;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  display: none !important;
+}
+
+section {
+  @include mixins.desktop() {
+    padding: 0.5rem 2rem;
+    overflow-y: hidden;
+  }
+
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0.5rem 1rem;
+  color: colors.$bg_primary;
+  background-color: colors.$bg_primary;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease-out;
+  overflow-y: auto;
+}
+
+#about {
+  display: block;
+  color: colors.$text_primary;
+  z-index: 1;
+}
+
+#project0 {
+  background-color: colors.$text_primary;
+  z-index: 2;
+
+  .projectcover {
+    .cover {
+      background-image: url(../img/autoplay.png);
+    }
+  }
+}
+
+#project1,
+#project2,
+#project4 {
+  background-color: colors.$nobis_bg;
+  z-index: 3;
+
+  .categories {
+    span {
+      border-color: colors.$bg_primary;
+    }
+  }
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 1rem;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../img/nobis.png);
+    }
+  }
+}
+
+#project2 {
+  background-color: colors.$cprime_bg;
+  z-index: 4;
+
+  .projectcover {
+    background-color: colors.$bg_primary;
+
+    .cover {
+      background-image: url(../img/cprime.png);
+    }
+  }
+}
+
+#project3 {
+  background-color: colors.$section_bg_alt;
+  z-index: 5;
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 1rem;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../img/triptidy.png);
+    }
+  }
+}
+
+#project4 {
+  background-color: colors.$section_bg;
+  z-index: 6;
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 1rem;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../img/echo.png);
+    }
+  }
+}
+
+#project5 {
+  background-color: colors.$section_bg_alt;
+  z-index: 7;
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 1rem;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../img/audioplayer.png);
+    }
+  }
 }

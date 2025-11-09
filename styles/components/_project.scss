@@ -1,0 +1,94 @@
+@use "../contants/colors" as colors;
+@use "../contants/mixins" as mixins;
+
+._project_ {
+  @include mixins.desktop() {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  overflow-y: hidden;
+
+  .title_desc {
+    @include mixins.desktop() {
+      @include mixins.flexmixin(row, nowrap, flex-start, space-between, 0);
+    }
+
+    .proj_title {
+      @include mixins.desktop() {
+        width: 60%;
+      }
+
+      @include mixins.flexmixin(
+        column,
+        nowrap,
+        flex-start,
+        flex-start,
+        0.75rem
+      );
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      .proj_desc {
+        font-size: 1.125rem;
+        font-weight: 400;
+      }
+    }
+
+    .categories {
+      @include mixins.desktop() {
+        @include mixins.flexmixin(column, nowrap, flex-start, flex-end, 1rem);
+        margin-top: 0;
+      }
+
+      margin-top: 1rem;
+
+      span {
+        padding: 0.5rem 1rem;
+        border: 1px solid colors.$divider;
+        border-radius: 2rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    @include mixins.flexmixin(row, nowrap, center, center, 1rem);
+    width: 100%;
+    margin-top: 1.5rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .projectcover {
+    @include mixins.desktop() {
+      margin-top: 2rem;
+      padding: 2rem;
+    }
+
+    width: 100%;
+    height: calc(100vh - 10rem);
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: colors.$section_bg_alt;
+
+    .cover {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem 1rem 0 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

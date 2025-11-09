@@ -1,40 +1,11 @@
-$bg_primary: #1f1f1f;
-$bg_secondary: #323232;
-$border_bg: rgba(248, 250, 252, 0.2);
-$text_primary: #f8fafc;
-$text_primary_dark: rgba(248, 250, 252, 0.78);
+$bg_primary: #ffffff;
+$bg_secondary: #7b7b7b;
+$divider: rgba(123, 123, 123, 0.2);
+$text_primary: #222222;
 $text_secondary: #7f7f7f;
-
-$accent: #333333;
-$accent-light: #4f4f4f;
-$white: #ffffff;
-$black: #000000;
-$githubblack: #0c0c0c;
-$boxShadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-$boxshadow01: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
-  0px 6px 24px rgba(0, 0, 0, 0.05);
-$colorg: rgba(16, 14, 29, 0.01);
-$colorg-tablet: rgba(51, 51, 51, 0.65);
-$lemon: #f3e31b;
-$goblin: #40863e;
-$mineshaft: #232323;
-$bush: #0c2b23;
-$gray: #c6c6c7;
-$ebb: #e6dedd;
-$tulip: #c5e8f5;
-$flamingo: #f45434;
-$silver: #bcbcbc;
-$milanored: #b30c04;
-$sunsetorange: #fc434b;
-$blumine: #235b83;
-$blueturqoise: #14c2fa;
-$biscay: #1c3364;
-$lochmara: #047ccc;
-
-/** */
-$bgv3secondary: rgba(50, 50, 50, 0.3);
-$textv3primary: rgba(230, 222, 221, 1);
-$textv3secondary: rgba(248, 250, 252, 0.7);
-$icons: rgba(248, 250, 252, 0.6);
-$divider: rgba(248, 250, 252, 0.1);
-$catbg: rgba(248, 250, 252, 0.04);
+$success: #34c759;
+//
+$section_bg: #1b88de;
+$section_bg_alt: #2d2a28;
+$nobis_bg: #e6660a;
+$cprime_bg: #f1515f;
