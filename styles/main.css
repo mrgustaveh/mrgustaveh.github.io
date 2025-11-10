@@ -253,40 +253,6 @@
   background-size: cover;
 }
 
-#controls {
-  display: flex !important;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  padding: 0.125rem;
-  border: 1px solid rgba(123, 123, 123, 0.2);
-  border-radius: 0.845rem;
-  background-color: #ffffff;
-}
-#controls span {
-  width: 50%;
-  height: 2px;
-  border-radius: 0.5rem;
-  background-color: #2d2a28;
-}
-#controls a {
-  display: flex !important;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  background-color: #222222;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.625rem;
-}
-
 *,
 *::before,
 *::after {
