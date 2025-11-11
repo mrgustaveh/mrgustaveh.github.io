@@ -322,30 +322,35 @@ section {
 
 #project1,
 #project2,
-#project4 {
+#project4,
+#project6 {
   background-color: #e6660a;
   z-index: 3;
 }
 #project1 .categories span,
 #project2 .categories span,
-#project4 .categories span {
+#project4 .categories span,
+#project6 .categories span {
   border-color: #ffffff;
 }
 @media only screen and (min-width: 1024px) {
   #project1 .projlinks,
   #project2 .projlinks,
-  #project4 .projlinks {
+  #project4 .projlinks,
+  #project6 .projlinks {
     margin-top: 1rem;
   }
 }
 #project1 .projectcover,
 #project2 .projectcover,
-#project4 .projectcover {
+#project4 .projectcover,
+#project6 .projectcover {
   background-color: #222222;
 }
 #project1 .projectcover .cover,
 #project2 .projectcover .cover,
-#project4 .projectcover .cover {
+#project4 .projectcover .cover,
+#project6 .projectcover .cover {
   background-image: url(../img/nobis.png);
 }
 
@@ -406,4 +411,15 @@ section {
 }
 #project5 .projectcover .cover {
   background-image: url(../img/audioplayer.png);
+}
+
+#project6 {
+  background-color: #f1515f;
+  z-index: 8;
+}
+#project6 .projectcover {
+  background-color: #222222;
+}
+#project6 .projectcover .cover {
+  background-image: url(../img/stacq.png);
 }/*# sourceMappingURL=main.css.map */

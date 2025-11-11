@@ -71,7 +71,8 @@ section {
 
 #project1,
 #project2,
-#project4 {
+#project4,
+#project6 {
   background-color: colors.$nobis_bg;
   z-index: 3;
 
@@ -162,6 +163,19 @@ section {
 
     .cover {
       background-image: url(../img/audioplayer.png);
+    }
+  }
+}
+
+#project6 {
+  background-color: colors.$cprime_bg;
+  z-index: 8;
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../img/stacq.png);
     }
   }
 }
