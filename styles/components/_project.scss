@@ -1,11 +1,12 @@
-@use "../contants/colors" as colors;
-@use "../contants/mixins" as mixins;
+@use "../constants/colors" as colors;
+@use "../constants/mixins" as mixins;
 
 ._project_ {
   @include mixins.desktop() {
     padding-top: 2rem;
     padding-bottom: 0;
   }
+
   overflow-y: hidden;
 
   .title_desc {
@@ -18,13 +19,11 @@
         width: 60%;
       }
 
-      @include mixins.flexmixin(
-        column,
+      @include mixins.flexmixin(column,
         nowrap,
         flex-start,
         flex-start,
-        0.75rem
-      );
+        0.75rem);
       font-size: 1.5rem;
       font-weight: 600;
 
@@ -54,15 +53,15 @@
   }
 
   .projlinks {
+    @include mixins.flexmixin(row, nowrap, center, center, 1rem);
+    width: 100%;
+    margin-top: 1.5rem;
+
     @include mixins.desktop() {
       margin-top: 0;
       align-items: flex-start;
       justify-content: flex-start;
     }
-
-    @include mixins.flexmixin(row, nowrap, center, center, 1rem);
-    width: 100%;
-    margin-top: 1.5rem;
 
     a {
       text-decoration: none;
@@ -89,6 +88,147 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+  }
+}
+
+#project_initial {
+  background-color: colors.$cprime_bg;
+  z-index: 2;
+
+  .categories {
+    span {
+      border-color: colors.$bg_primary;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$bg_primary;
+
+    .cover {
+      background-image: url(../../img/better-shoe.png);
+    }
+  }
+}
+
+#project0 {
+  background-color: colors.$text_primary;
+  z-index: 3;
+
+  .projectcover {
+    .cover {
+      background-image: url(../../img/autoplay.png);
+    }
+  }
+}
+
+#project1,
+#project2,
+#project4,
+#project6 {
+  background-color: colors.$nobis_bg;
+  z-index: 4;
+
+  .categories {
+    span {
+      border-color: colors.$bg_primary;
+    }
+  }
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 1rem;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../../img/nobis.png);
+    }
+  }
+}
+
+#project2 {
+  background-color: colors.$cprime_bg;
+  z-index: 5;
+
+  .projectcover {
+    background-color: colors.$bg_primary;
+
+    .cover {
+      background-image: url(../../img/cprime.png);
+    }
+  }
+}
+
+#project3 {
+  background-color: colors.$section_bg_alt;
+  z-index: 6;
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 1rem;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../../img/triptidy.png);
+    }
+  }
+}
+
+#project4 {
+  background-color: colors.$section_bg;
+  z-index: 7;
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 1rem;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../../img/echo.png);
+    }
+  }
+}
+
+#project5 {
+  background-color: colors.$section_bg_alt;
+  z-index: 8;
+
+  .projlinks {
+    @include mixins.desktop() {
+      margin-top: 1rem;
+    }
+  }
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../../img/audioplayer.png);
+    }
+  }
+}
+
+#project6 {
+  background-color: colors.$cprime_bg;
+  z-index: 9;
+
+  .projectcover {
+    background-color: colors.$text_primary;
+
+    .cover {
+      background-image: url(../../img/stacq.png);
     }
   }
 }
