@@ -5,6 +5,8 @@
   #about_projects {
     @include mixins.desktop() {
       @include mixins.flexmixin(row, nowrap, center, space-between, 0);
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
 
     .about_txt {
